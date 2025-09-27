@@ -33,7 +33,7 @@ module.exports = {
           darkBlue: "#143150",
           darkBlueAlpha: "#14315026",
           slate: "#16427140",
-
+          rose: "#F8F7F5"
 
         },
       },

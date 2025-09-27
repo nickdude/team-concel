@@ -21,25 +21,37 @@ export default function SolutionsDropdown() {
                     <Menu.Item>
                         {({ active }) => (
                             <Link
-                                href="/solutions/one"
+                                href="/legal-design-transformation"
                                 className={`block px-4 py-2 text-sm ${active ? "bg-gray-100 text-brand-blue" : "text-gray-700"
                                     }`}
                             >
-                                Solution One
+                                Legal Design Transformation
                             </Link>
                         )}
                     </Menu.Item>
                     <Menu.Item>
                         {({ active }) => (
                             <Link
-                                href="/solutions/two"
+                                href="/contract-as-a-service"
                                 className={`block px-4 py-2 text-sm ${active ? "bg-gray-100 text-brand-blue" : "text-gray-700"
                                     }`}
                             >
-                                Solution Two
+                                Contract As A Service (CAAS)
                             </Link>
                         )}
                     </Menu.Item>
+                    <Menu.Item>
+                        {({ active }) => (
+                            <Link
+                                href="/fractional-general-counsel"
+                                className={`block px-4 py-2 text-sm ${active ? "bg-gray-100 text-brand-blue" : "text-gray-700"
+                                    }`}
+                            >
+                                Fractional General Counsel Solutions
+                            </Link>
+                        )}
+                    </Menu.Item>
+
                 </div>
             </Menu.Items>
         </Menu>

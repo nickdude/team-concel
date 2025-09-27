@@ -17,10 +17,12 @@ import TagCard from "@/components/TagCard";
 import TagCardSection from "@/components/TagCardSection";
 import ProcessAccordion from "@/components/ProcessAccordion";
 import HeroSection from "@/components/HeroSection";
+import FaqSection from "@/components/FaqSection";
 
 export default function Home() {
   return (
     <main className="space-y-12 bg-brand-gray">
+
       <HeroSection />
       <BorderlessCardSection />
       <UspSection />
@@ -29,6 +31,7 @@ export default function Home() {
       <ProcessSection />
       <BlogCardSection />
       <StrategyCall />
+      <FaqSection />
     </main>
   );
 }
