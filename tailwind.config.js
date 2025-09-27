@@ -32,6 +32,7 @@ module.exports = {
           navyDark: "#1B4878CC",
           darkBlue: "#143150",
           darkBlueAlpha: "#14315026",
+          slate: "#16427140",
 
         },
       },
