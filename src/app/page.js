@@ -9,11 +9,12 @@ import BlogCardSection from "@/components/BlogCardSection";
 import StrategyCall from "@/components/StrategyCall";
 import ProcessSection from "@/components/ProcessSection";
 import Count from "@/components/Count";
+import UspSection from "@/components/UspSection";
 
 export default function Home() {
   return (
     <main className="py-10 space-y-12 bg-brand-gray">
-
+      <UspSection />
       <BorderlessCardSection />
       <Count />
       <CardSection />
