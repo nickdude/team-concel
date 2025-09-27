@@ -1,7 +1,7 @@
 import Button from "./Button";
 import CountCard from "./CountCard";
 
-export default function Count() {
+export default function CountSection() {
     return (
         <section className="bg-brand-gold py-24 px-32">
             <h1 className='text-left font-onest text-[40px] font-semibold text-navy leading-[130%] tracking-[-0.67px]'>India’s First Legal Practice for

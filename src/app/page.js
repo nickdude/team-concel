@@ -8,21 +8,27 @@ import BlogCard from "@/components/BlogCard";
 import BlogCardSection from "@/components/BlogCardSection";
 import StrategyCall from "@/components/StrategyCall";
 import ProcessSection from "@/components/ProcessSection";
-import Count from "@/components/Count";
+import CountSection from "@/components/CountSection";
 import UspSection from "@/components/UspSection";
+import SubHeroSection from "@/components/SubHeroSection";
+import JomboCountCard from "@/components/JomboCountCard";
+import JomboCountSection from "@/components/JomboCountSection";
 
 export default function Home() {
   return (
     <main className="py-10 space-y-12 bg-brand-gray">
+      <FontPreview />
+      <ColorGrid />
+      <JomboCountSection />
+      <SubHeroSection />
       <UspSection />
       <BorderlessCardSection />
-      <Count />
+      <CountSection />
       <CardSection />
       <ProcessSection />
       <BlogCardSection />
       <StrategyCall />
-      <FontPreview />
-      <ColorGrid />
+
 
     </main>
   );
