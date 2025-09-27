@@ -16,25 +16,19 @@ import JomboCountSection from "@/components/JomboCountSection";
 import TagCard from "@/components/TagCard";
 import TagCardSection from "@/components/TagCardSection";
 import ProcessAccordion from "@/components/ProcessAccordion";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
-    <main className="py-10 space-y-12 bg-brand-gray">
-      <FontPreview />
-      <ProcessAccordion />
-      <ColorGrid />
-      <TagCardSection />
-      <JomboCountSection />
-      <SubHeroSection />
-      <UspSection />
+    <main className="space-y-12 bg-brand-gray">
+      <HeroSection />
       <BorderlessCardSection />
+      <UspSection />
       <CountSection />
       <CardSection />
       <ProcessSection />
       <BlogCardSection />
       <StrategyCall />
-
-
     </main>
   );
 }
