@@ -8,13 +8,16 @@ import BlogCard from "@/components/BlogCard";
 import BlogCardSection from "@/components/BlogCardSection";
 import StrategyCall from "@/components/StrategyCall";
 import ProcessSection from "@/components/ProcessSection";
+import Count from "@/components/Count";
 
 export default function Home() {
   return (
     <main className="py-10 space-y-12 bg-brand-gray">
-      <ProcessSection />
+
       <BorderlessCardSection />
+      <Count />
       <CardSection />
+      <ProcessSection />
       <BlogCardSection />
       <StrategyCall />
       <FontPreview />
