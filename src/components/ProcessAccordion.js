@@ -41,8 +41,10 @@ export default function ProcessAccordion() {
     const [openStep, setOpenStep] = useState(1);
 
     const toggleStep = (id) => {
-        setOpenStep(openStep === id ? null : id);
+        if (openStep === id) return;
+        setOpenStep(id);
     };
+
 
     return (
         <section className="bg-brand-gold h-[999px] flex gap-28 items-center px-20 justify-center">
@@ -82,7 +84,7 @@ function AccordionItem({ step, isOpen, toggle }) {
         <div className="bg-white rounded-lg">
             <button
                 onClick={toggle}
-                className="w-full flex text-lg leading-[100%] justify-between items-center px-5 py-7 text-left font-onest font-normal text-brand-navy"
+                className="w-full flex text-lg leading-[100%] justify-between items-center px-5 py-5 text-left font-onest font-normal text-brand-navy"
             >
                 <span>
                     {step.id}. {step.title}
@@ -101,7 +103,7 @@ function AccordionItem({ step, isOpen, toggle }) {
                 }}
                 className="overflow-hidden transition-[max-height] duration-500 ease-in-out"
             >
-                <p className="px-5 pb-7 text-sm leading-6 text-brand-navyDark">{step.description}</p>
+                <p className="px-5 pb-5 text-sm leading-6 text-brand-navyDark">{step.description}</p>
             </div>
         </div>
     );
