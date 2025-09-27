@@ -34,7 +34,11 @@ module.exports = {
           darkBlueAlpha: "#14315026",
           slate: "#16427140",
 
+
         },
+      },
+      boxShadow: {
+        around: "0 4px 12px rgba(0, 0, 0, 0.15)",
       },
     },
   },

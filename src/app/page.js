@@ -13,12 +13,17 @@ import UspSection from "@/components/UspSection";
 import SubHeroSection from "@/components/SubHeroSection";
 import JomboCountCard from "@/components/JomboCountCard";
 import JomboCountSection from "@/components/JomboCountSection";
+import TagCard from "@/components/TagCard";
+import TagCardSection from "@/components/TagCardSection";
+import ProcessAccordion from "@/components/ProcessAccordion";
 
 export default function Home() {
   return (
     <main className="py-10 space-y-12 bg-brand-gray">
       <FontPreview />
+      <ProcessAccordion />
       <ColorGrid />
+      <TagCardSection />
       <JomboCountSection />
       <SubHeroSection />
       <UspSection />
