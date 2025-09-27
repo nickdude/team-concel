@@ -17,9 +17,9 @@ export default function Navbar() {
             <nav className="flex items-center w-[100vw]">
                 <div className="flex items-center justify-evenly px-6 py-4 bg-white w-[45vw]">
                     {/* Logo */}
-                    <div className="flex items-center space-x-2">
+                    <Link className="flex items-center space-x-2" href="/">
                         <img src="/assets/logo.svg" alt="Logo" className="h-8" />
-                    </div>
+                    </Link>
 
                     {/* Nav Links */}
                     <nav className="hidden md:flex space-x-6 text-brand-navy font-medium font-onest text-[13.13px] leading-[21px]">
