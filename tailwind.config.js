@@ -1,0 +1,41 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,jsx,tsx,mdx}",
+    "./pages/**/*.{js,jsx,tsx,mdx}",
+    "./components/**/*.{js,jsx,tsx,mdx}",
+    "./src/**/*.{js,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        onest: ["var(--font-onest)", "sans-serif"],
+        bricolage: ["var(--font-bricolage)", "sans-serif"],
+        spacegrotesk: ["var(--font-spacegrotesk)", "sans-serif"],
+        ptserif: ["var(--font-ptserif)", "serif"],
+      },
+      colors: {
+        brand: {
+          blue: "#0383D0",
+          navy: "#1B4878",
+          deepBlue: "#1F558E",
+          white: "#FFFFFF",
+          navyAlpha: "#1B4878B2",
+          gold: "#FCD183",
+          beige: "#EBDBCB",
+          sand: "#D9BCA2",
+          amber: "#E9AF35",
+          grayish: "#CDD8DD",
+          whiteAlpha: "#FFFFFF99",
+          blackAlpha: "#00000033",
+          gray: "#F3F1EE",
+          navyDark: "#1B4878CC",
+          darkBlue: "#143150",
+          darkBlueAlpha: "#14315026",
+
+        },
+      },
+    },
+  },
+  plugins: [],
+};
