@@ -103,7 +103,7 @@ const AdminDashboard = () => {
                         <ul className="space-y-2">
                             <li>✅ Admin panel setup complete</li>
                             <li>✅ Data editor ready to use</li>
-                            <li>🔧 Click on "Data Editor" to start editing your website content</li>
+                            <li>🔧 Click on &quot;Data Editor&quot; to start editing your website content</li>
                             <li>💡 Changes are saved directly to your siteData.js file</li>
                             <li>🚀 View your changes instantly on the live site</li>
                         </ul>
