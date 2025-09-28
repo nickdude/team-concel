@@ -4,40 +4,8 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import Button from "./Button";
 import DropDownButton from "./DropDownButton";
 
-const steps = [
-    {
-        id: 1,
-        title: "Empathize → Expertise",
-        description:
-            "We get into your business model fast—understanding risks before they trip you up.",
-    },
-    {
-        id: 2,
-        title: "Define",
-        description:
-            "Clarify your goals, scope, and priorities to build a solid legal foundation.",
-    },
-    {
-        id: 3,
-        title: "Ideate",
-        description:
-            "Generate smart strategies that balance compliance, cost, and growth.",
-    },
-    {
-        id: 4,
-        title: "Prototype",
-        description:
-            "Test legal frameworks quickly with tailored drafts and practical models.",
-    },
-    {
-        id: 5,
-        title: "Evaluate",
-        description:
-            "Measure results, iterate, and refine legal design for long-term success.",
-    },
-];
 
-export default function ProcessAccordion() {
+export default function ProcessAccordion({ header, description, processes, buttonLabel }) {
     const [openStep, setOpenStep] = useState(1);
 
     const toggleStep = (id) => {
@@ -51,12 +19,12 @@ export default function ProcessAccordion() {
             {/* Left Side - Accordion */}
             <div className="flex flex-col items-start w-[443px]">
                 <h2 className="text-[40px] font-semibold text-brand-navy font-onest leading-[130%] tracking-[-0.67px]">
-                    Your Legal Design & Transformation{" "}
-                    <span className="italic font-ptserif font-normal">Journey with Team Counsel</span>
+                    {header?.simple}{" "}
+                    <span className="italic font-ptserif font-normal">{header?.italic}</span>
                 </h2>
 
                 <div className="mt-8 space-y-3 mb-12">
-                    {steps.map((step) => (
+                    {processes.map((step) => (
                         <AccordionItem
                             key={step.id}
                             step={step}
@@ -66,7 +34,7 @@ export default function ProcessAccordion() {
                     ))}
                 </div>
 
-                <Button label="Book My Strategy Call" width="auto" />
+                <Button label={buttonLabel} width="auto" />
             </div>
 
             {/* Right Side - Image Placeholder */}

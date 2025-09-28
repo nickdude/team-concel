@@ -1,33 +1,14 @@
-import Image from "next/image";
 
-const steps = [
-    {
-        number: "1",
-        title: "Book a Startup Legal Session",
-        description: "We understand your business & bottlenecks.",
-    },
-    {
-        number: "2",
-        title: "Get a Tailored Legal Plan",
-        description: "Startup-native frameworks, not legal bloat.",
-    },
-    {
-        number: "3",
-        title: "Execute & Scale",
-        description: "We stay with you as your deal flow and compliance grow.",
-    },
-];
-
-export default function ProcessSection() {
+export default function ProcessSection({ header, steps, image }) {
     return (
         <section className="py-16 flex justify-center">
             <div className="flex gap-44 items-center justify-center">
                 {/* Left Side */}
                 <div className="max-w-sm">
                     <h2 className="text-4xl font-onest font-semibold text-brand-navy leading-[130%] tracking-[-0.67px]">
-                        Simple. Fast. <br />
+                        {header?.simple} <br />
                         <span className="italic font-ptserif font-normal text-brand-navy">
-                            Founder-friendly.
+                            {header?.italic}
                         </span>
                     </h2>
 

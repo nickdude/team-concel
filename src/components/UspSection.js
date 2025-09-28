@@ -1,23 +1,16 @@
 import Button from "./Button";
 
-const points = [
-    "BigLaw expertise without the high-end pricing",
-    "In-house efficiency with external flexibility",
-    "Scalable legal support built for growth",
-    "Trusted legal partners, not just service providers",
-];
-
-export default function UspSection() {
+export default function UspSection({ header, description, points, uspImage }) {
     return (
         <section className="py-16 px-28 flex justify-center">
             <div className="flex gap-44 items-center justify-center">
                 {/* Left Side */}
                 <div className="max-w-md">
                     <h2 className="text-4xl font-onest font-semibold text-brand-navy leading-[130%] tracking-[-0.67px]">
-                        The Fix We Bring <br />
+                        {header?.simple} <br />
                     </h2>
                     <p className="text-base text-brand-navyAlpha leading-6 font-onest mt-4">
-                        From fundraising docs to cross-border compliance, we keep you investor-ready and deal-ready. Legal that moves at the speed of your big idea.
+                        {description}
                     </p>
                     <div className="space-y-3 my-10">
                         {points.map((point, idx) => (
@@ -32,7 +25,7 @@ export default function UspSection() {
 
                 {/* Right Side */}
                 <div className="w-[674px] h-[575px] rounded-xl bg-white">
-                    <img src="/assets/usp.svg" alt="USP 1" className="object-cover w-full h-full rounded-xl" />
+                    <img src={uspImage?.src} alt={uspImage?.alt} className="object-cover w-full h-full rounded-xl" />
                 </div>
             </div>
         </section>

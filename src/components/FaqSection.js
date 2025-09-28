@@ -2,34 +2,7 @@
 import { useState, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 
-const faqs = [
-    {
-        id: 1,
-        question: "What makes Team Counsel different from traditional law firms?",
-        answer:
-            "We focus exclusively on startups and high-growth companies, providing flexible legal solutions that move at your speed.",
-    },
-    {
-        id: 2,
-        question: "What are your pricing models?",
-        answer:
-            "We offer transparent flat-fee, subscription, and fractional counsel pricing—no surprise hourly bills.",
-    },
-    {
-        id: 3,
-        question: "How do I know if this is right for me?",
-        answer:
-            "If you’re a founder, startup, or investor looking for proactive legal strategy instead of reactive lawyering, this is for you.",
-    },
-    {
-        id: 4,
-        question: "Which industries do you specialize in?",
-        answer:
-            "We work with tech, SaaS, fintech, health, consumer, and emerging markets—basically where innovation happens.",
-    },
-];
-
-export default function FaqSection() {
+export default function FaqSection({ header, description, faqs }) {
     const [openId, setOpenId] = useState(null);
 
     const toggle = (id) => {
@@ -42,12 +15,11 @@ export default function FaqSection() {
                 {/* Left Side */}
                 <div className="w-[374px]">
                     <h2 className="text-[40px] font-semibold text-brand-navy font-onest leading-[130%] tracking-[-0.67px]">
-                        Your questions{" "}
-                        <span className="italic font-normal">answered</span>
+                        {header.simple}{" "}
+                        <span className="italic font-normal">{header.italic}</span>
                     </h2>
                     <p className="mt-4 text-brand-navy text-base leading-[27px] font-onest">
-                        Still have questions? Here are some of our most frequently asked
-                        questions.
+                        {description}
                     </p>
                 </div>
 
