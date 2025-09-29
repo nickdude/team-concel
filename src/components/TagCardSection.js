@@ -15,7 +15,7 @@ export default function TagCardSection({ header, description, tags }) {
                 {description}
             </p>
 
-            <div className="flex flex-wrap gap-5 justify-between mt-12">
+            <div className="flex flex-wrap gap-5 justify-center mt-12">
                 {tags.map((card, index) => (
                     <TagCard key={index} icon={card.icon} label={card.label} value={card.value} />
                 ))}
