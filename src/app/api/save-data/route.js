@@ -2,6 +2,12 @@ import fs from 'fs';
 import path from 'path';
 import { NextResponse } from 'next/server';
 
+// helper: convert JSON into JS object literal (keys without quotes if valid identifiers)
+function toObjectLiteral(obj, indent = 4) {
+    return JSON.stringify(obj, null, indent)
+        .replace(/"([a-zA-Z_][a-zA-Z0-9_]*)":/g, '$1:');
+}
+
 export async function POST(request) {
     try {
         const data = await request.json();
@@ -15,7 +21,13 @@ export async function POST(request) {
         }
 
         // Validate required pages
-        const requiredPages = ['homePage', 'practicePage', 'legalDesignAndTransformationPage', 'caasPage', 'fractionalGcPage'];
+        const requiredPages = [
+            'homePage',
+            'practicePage',
+            'legalDesignAndTransformationPage',
+            'caasPage',
+            'fractionalGcPage'
+        ];
         for (const page of requiredPages) {
             if (!data[page]) {
                 return NextResponse.json(
@@ -29,19 +41,23 @@ export async function POST(request) {
         const filePath = path.join(process.cwd(), 'src', 'data', 'siteData.js');
 
         // Create backup of current file
-        const backupPath = path.join(process.cwd(), 'src', 'data', `siteData.backup.${Date.now()}.js`);
+        const backupPath = path.join(
+            process.cwd(),
+            'src',
+            'data',
+            `siteData.backup.${Date.now()}.js`
+        );
         try {
             fs.copyFileSync(filePath, backupPath);
         } catch (backupError) {
             console.warn('Could not create backup:', backupError.message);
         }
 
-        // Create the content string with proper formatting
-        const fileContent = `const siteData = ${JSON.stringify(data, null, 4)};
+        // Use our custom serializer
+        const fileContent = `const siteData = ${toObjectLiteral(data, 4)};
 
 export default siteData;`;
 
-        // Write the file
         fs.writeFileSync(filePath, fileContent, 'utf8');
 
         return NextResponse.json({
@@ -57,6 +73,7 @@ export default siteData;`;
         );
     }
 }
+
 
 export async function GET() {
     try {

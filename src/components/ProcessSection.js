@@ -1,8 +1,9 @@
+import Hr from "./Hr";
 
 export default function ProcessSection({ header, steps, image }) {
     return (
-        <section className="py-16 flex justify-center">
-            <div className="flex gap-44 items-center justify-center">
+        <section className="py-16 flex flex-col items-center justify-center">
+            <div className="flex gap-44 items-center justify-center mb-20">
                 {/* Left Side */}
                 <div className="max-w-sm">
                     <h2 className="text-4xl font-onest font-semibold text-brand-navy leading-[130%] tracking-[-0.67px]">
@@ -43,6 +44,7 @@ export default function ProcessSection({ header, steps, image }) {
                     <img src="/assets/process.svg" alt="Process" className="object-cover w-full h-full" />
                 </div>
             </div>
+            <Hr />
         </section>
     );
 }

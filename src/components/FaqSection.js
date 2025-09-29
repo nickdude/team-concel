@@ -10,7 +10,7 @@ export default function FaqSection({ header, description, faqs }) {
     };
 
     return (
-        <section className="py-20 px-20 flex items-center justify-center">
+        <section className="py-20 px-20 flex items-center justify-center rounded-b-3xl">
             <div className="flex gap-40">
                 {/* Left Side */}
                 <div className="w-[374px]">

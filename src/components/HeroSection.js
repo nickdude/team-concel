@@ -1,11 +1,12 @@
 import Button from "./Button";
+import Hr from "./Hr";
 import Label from "./Label";
 
 export default function HeroSection({ label, header, description, logos, tag, subTag, buttonLabel }) {
 
     return (
         <section className="flex flex-col items-center justify-center gap-12">
-            <div className="flex items-center justify-center gap-44">
+            <div className="flex items-center justify-center gap-48">
                 <div className="flex flex-col items-left w-[380px]">
                     <Label text={label} />
                     <h1 className='text-left font-onest text-5xl font-semibold text-navy leading-[125%] tracking-[-1px] mt-3'>{header?.simple} <span className='text-navyAlpha font-ptserif font-normal italic'>{header?.italic}</span></h1>
@@ -44,6 +45,7 @@ export default function HeroSection({ label, header, description, logos, tag, su
                     </div>
                 </div>
             </div>
+            <Hr />
         </section >
     );
 }
