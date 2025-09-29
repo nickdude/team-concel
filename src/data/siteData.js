@@ -510,7 +510,14 @@ const siteData = {
                     "authorName": "Namay Kedia,",
                     "authorTitle": "Founder of Ballers",
                     "color": "beige"
-                }
+                },
+                {
+                    "description": "Team Counsel brings a rare blend of legal expertise and deep startup intuition. In the fast-paced world of early-stage ventures, their agility, founder-first approach, and ability to anticipate challenges while providing strategic guidance truly set them apart. They have added real value to our portfolio from faster execution to compliance clarity, and I highly recommend them to any startup serious about scaling.",
+                    "authorImage": "/assets/author2.svg",
+                    "authorName": "Siddhartha,",
+                    "authorTitle": "Managing Partner, The Neon Fund",
+                    "color": "gold"
+                },
             ]
         },
         "legalExpertiseSection": {
@@ -657,7 +664,14 @@ const siteData = {
                     "authorName": "Namay Kedia,",
                     "authorTitle": "Founder of Ballers",
                     "color": "beige"
-                }
+                },
+                {
+                    "description": "Team Counsel brings a rare blend of legal expertise and deep startup intuition. In the fast-paced world of early-stage ventures, their agility, founder-first approach, and ability to anticipate challenges while providing strategic guidance truly set them apart. They have added real value to our portfolio from faster execution to compliance clarity, and I highly recommend them to any startup serious about scaling.",
+                    "authorImage": "/assets/author2.svg",
+                    "authorName": "Siddhartha,",
+                    "authorTitle": "Managing Partner, The Neon Fund",
+                    "color": "gold"
+                },
             ]
         },
         "legalExpertiseSection": {
@@ -809,7 +823,14 @@ const siteData = {
                     "authorName": "Namay Kedia,",
                     "authorTitle": "Founder of Ballers",
                     "color": "beige"
-                }
+                },
+                {
+                    "description": "Team Counsel brings a rare blend of legal expertise and deep startup intuition. In the fast-paced world of early-stage ventures, their agility, founder-first approach, and ability to anticipate challenges while providing strategic guidance truly set them apart. They have added real value to our portfolio from faster execution to compliance clarity, and I highly recommend them to any startup serious about scaling.",
+                    "authorImage": "/assets/author2.svg",
+                    "authorName": "Siddhartha,",
+                    "authorTitle": "Managing Partner, The Neon Fund",
+                    "color": "gold"
+                },
             ]
         },
         "legalExpertiseSection": {
