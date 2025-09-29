@@ -1,3 +1,7 @@
 export default function Hr() {
-    return <hr className="w-[84%] border-t border-black my-1" />;
+    return (
+        <div className="flex justify-center w-full  px-36 2xl:px-44 my-1" >
+            <hr className="border-t border-black w-full" />
+        </div>
+    )
 }

@@ -34,7 +34,7 @@ const faqSection = siteData?.homePage?.faqSection;
 export default function Home() {
 
   return (
-    <main className="space-y-12 bg-brand-gray 2xl:px-60">
+    <main className="space-y-12 bg-brand-gray">
       <HeroSection
         label={hero?.label}
         header={hero?.header}

@@ -6,18 +6,18 @@ export default function HeroSection({ label, header, description, logos, tag, su
 
     return (
         <section className="flex flex-col items-center justify-center gap-12">
-            <div className="flex items-center justify-center gap-48">
+            <div className="flex items-center justify-between w-full px-28 2xl:px-56 h-[90vh]">
                 <div className="flex flex-col items-left w-[380px]">
                     <Label text={label} />
                     <h1 className='text-left font-onest text-5xl font-semibold text-navy leading-[125%] tracking-[-1px] mt-3'>{header?.simple} <span className='text-navyAlpha font-ptserif font-normal italic'>{header?.italic}</span></h1>
-                    <p className="text-base text-brand-deepBlue leading-[27px] font-onest mb-20 mt-5">{description}</p>
+                    <p className="text-base text-brand-deepBlue leading-[27px] font-onest mb-14 mt-5">{description}</p>
                     <div className="flex flex-col items-center gap-6 w-fit">
                         <Button label={buttonLabel} width="fit" />
                         <p className="font-onest font-medium text-[15px] leading-6 underline text-brand-blue">{tag}</p>
                     </div>
                 </div>
-                <div className="h-[729px]">
-                    <img src="/assets/hero.svg" alt="Hero Background" className="h-[729px] object-cover" />
+                <div className="h-full">
+                    <img src="/assets/hero.svg" alt="Hero Background" className="h-full object-cover" />
                 </div>
             </div>
             <div className="flex flex-col items-center justify-center mt-10 mb-4">

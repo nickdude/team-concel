@@ -15,7 +15,7 @@ export default function ProcessAccordion({ header, description, processes, butto
 
 
     return (
-        <section className="bg-brand-gold h-[999px] flex gap-28 items-center px-20 justify-center">
+        <section className="bg-brand-gold h-[999px] flex gap-28 items-center px-36 2xl:px-44 justify-center">
             {/* Left Side - Accordion */}
             <div className="flex flex-col items-start w-[443px]">
                 <h2 className="text-[40px] font-semibold text-brand-navy font-onest leading-[130%] tracking-[-0.67px]">

@@ -2,8 +2,8 @@ import Button from "./Button";
 
 export default function UspSection({ header, description, points, uspImage }) {
     return (
-        <section className="py-16 px-28 flex justify-center">
-            <div className="flex gap-44 items-center justify-center">
+        <section className="py-16 flex justify-center">
+            <div className="flex items-center justify-between px-36 2xl:px-44 w-full">
                 {/* Left Side */}
                 <div className="max-w-md">
                     <h2 className="text-4xl font-onest font-semibold text-brand-navy leading-[130%] tracking-[-0.67px]">

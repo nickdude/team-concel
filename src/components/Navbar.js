@@ -20,7 +20,7 @@ export default function Navbar() {
             </div>
 
             {/* Main Navbar */}
-            <nav className="flex items-center w-[100vw]">
+            <nav className="flex items-center w-[100vw] 2xl:px-28">
                 <div className="flex items-center justify-evenly px-6 py-4 bg-white w-[45vw]">
                     {/* Logo */}
                     <Link className="flex items-center space-x-2" href="/">
@@ -28,7 +28,7 @@ export default function Navbar() {
                     </Link>
 
                     {/* Nav Links */}
-                    <nav className="hidden md:flex space-x-6 text-brand-navy font-medium font-onest text-[13.13px] leading-[21px]">
+                    <div className="hidden md:flex space-x-6 text-brand-navy font-medium font-onest text-[13.13px] leading-[21px]">
                         {navbarItems.map((item, idx) =>
                             item.type === "link" ? (
                                 <Link
@@ -40,11 +40,11 @@ export default function Navbar() {
                                 </Link>
                             ) : item.type === "dropdown" ? (
                                 <div key={idx} className="relative group">
-                                    <SolutionsDropdown />
+                                    <SolutionsDropdown item={item} />
                                 </div>
                             ) : null
                         )}
-                    </nav>
+                    </div>
                 </div>
 
                 {/* Right Section */}

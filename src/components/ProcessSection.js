@@ -2,8 +2,8 @@ import Hr from "./Hr";
 
 export default function ProcessSection({ header, steps, image }) {
     return (
-        <section className="py-16 flex flex-col items-center justify-center">
-            <div className="flex gap-44 items-center justify-center mb-20">
+        <section className="py-16 flex flex-col items-center ">
+            <div className="flex items-center justify-between mb-20 w-full px-36 2xl:px-44">
                 {/* Left Side */}
                 <div className="max-w-sm">
                     <h2 className="text-4xl font-onest font-semibold text-brand-navy leading-[130%] tracking-[-0.67px]">

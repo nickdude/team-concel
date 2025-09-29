@@ -4,7 +4,7 @@ import TagCard from "./TagCard";
 export default function TagCardSection({ header, description, tags }) {
 
     return (
-        <section className="py-16 px-28 flex flex-col justify-center">
+        <section className="py-16 flex flex-col justify-center px-36 2xl:px-44">
             <h1 className="text-left font-onest text-[40px] font-semibold text-navy leading-[130%] tracking-[-0.67px]">
                 {header?.simple}{" "}
                 <span className="text-navyAlpha font-ptserif font-normal italic">
@@ -15,7 +15,7 @@ export default function TagCardSection({ header, description, tags }) {
                 {description}
             </p>
 
-            <div className="flex flex-wrap gap-5 justify-center mt-12">
+            <div className="flex flex-wrap gap-5 justify-between mt-12">
                 {tags.map((card, index) => (
                     <TagCard key={index} icon={card.icon} label={card.label} value={card.value} />
                 ))}
