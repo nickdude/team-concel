@@ -2,7 +2,7 @@ const siteData = {
     "navbar": [
         {
             "label": "Practice",
-            "href": "/practice",
+            "href": "/practic",
             "type": "link"
         },
         {
@@ -11,15 +11,15 @@ const siteData = {
             "subItems": [
                 {
                     "label": "Legal Design Transformation",
-                    "href": "/legal-design-transformation"
+                    "href": "/legal-design-transformatio"
                 },
                 {
                     "label": "Contract As A Service (CAAS)",
-                    "href": "/contract-as-a-service"
+                    "href": "/contract-as-a-servic"
                 },
                 {
                     "label": "Fractional General Counsel Solutions",
-                    "href": "/fractional-general-counsel"
+                    "href": "/fractional-general-counse"
                 }
             ]
         },
