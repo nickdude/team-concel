@@ -16,7 +16,7 @@ export default function FaqSection({ header, description, faqs }) {
                 <div className="w-[374px]">
                     <h2 className="text-[40px] font-semibold text-brand-navy font-onest leading-[130%] tracking-[-0.67px]">
                         {header.simple}{" "}
-                        <span className="italic font-normal">{header.italic}</span>
+                        <span className="italic font-normal font-ptserif">{header.italic}</span>
                     </h2>
                     <p className="mt-4 text-brand-navy text-base leading-[27px] font-onest">
                         {description}
