@@ -1,9 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
 import Button from "./Button";
 import DropDownButton from "./DropDownButton";
-
 
 export default function ProcessAccordion({ header, description, processes, buttonLabel }) {
     const [openStep, setOpenStep] = useState(1);
@@ -13,17 +11,17 @@ export default function ProcessAccordion({ header, description, processes, butto
         setOpenStep(id);
     };
 
-
     return (
-        <section className="bg-brand-gold h-[999px] flex gap-28 items-center px-36 2xl:px-44 justify-center">
+        <section className="bg-brand-gold flex flex-col sm:flex-row gap-12 sm:gap-28 items-start sm:items-center px-4 sm:px-8 md:px-36 2xl:px-44 py-12 sm:py-20">
+
             {/* Left Side - Accordion */}
-            <div className="flex flex-col items-start w-[443px]">
-                <h2 className="text-[40px] font-semibold text-brand-navy font-onest leading-[130%] tracking-[-0.67px]">
+            <div className="flex flex-col w-full sm:w-[443px]">
+                <h2 className="text-2xl sm:text-3xl md:text-[40px] font-semibold text-brand-navy font-onest leading-[130%] tracking-[-0.67px]">
                     {header?.simple}{" "}
                     <span className="italic font-ptserif font-normal">{header?.italic}</span>
                 </h2>
 
-                <div className="mt-8 space-y-3 mb-12">
+                <div className="mt-6 space-y-3 mb-8">
                     {processes.map((step) => (
                         <AccordionItem
                             key={step.id}
@@ -38,8 +36,8 @@ export default function ProcessAccordion({ header, description, processes, butto
             </div>
 
             {/* Right Side - Image Placeholder */}
-            <div className="flex-1 bg-gray-200 rounded-xl flex items-center justify-center max-w-[674px] h-[799px]">
-
+            <div className="w-full sm:flex-1 bg-gray-200 rounded-xl flex items-center justify-center min-h-[300px] sm:min-h-[500px]">
+                {/* Image can go here */}
             </div>
         </section>
     );
@@ -52,16 +50,12 @@ function AccordionItem({ step, isOpen, toggle }) {
         <div className="bg-white rounded-lg">
             <button
                 onClick={toggle}
-                className="w-full flex text-lg leading-[100%] justify-between items-center px-5 py-5 text-left font-onest font-normal text-brand-navy"
+                className="w-full flex text-lg leading-[100%] justify-between items-center px-4 sm:px-5 py-4 sm:py-5 text-left font-onest font-normal text-brand-navy"
             >
                 <span>
                     {step.id}. {step.title}
                 </span>
-                {isOpen ? (
-                    <DropDownButton rotated={true} />
-                ) : (
-                    <DropDownButton rotated={false} />
-                )}
+                <DropDownButton rotated={isOpen} />
             </button>
 
             <div
@@ -71,7 +65,9 @@ function AccordionItem({ step, isOpen, toggle }) {
                 }}
                 className="overflow-hidden transition-[max-height] duration-500 ease-in-out"
             >
-                <p className="px-5 pb-5 text-sm leading-6 text-brand-navyDark">{step.description}</p>
+                <p className="px-4 sm:px-5 pb-4 sm:pb-5 text-sm leading-6 text-brand-navyDark">
+                    {step.description}
+                </p>
             </div>
         </div>
     );
