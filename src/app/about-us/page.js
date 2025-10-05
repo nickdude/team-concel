@@ -23,7 +23,7 @@ export default function AboutUsPage() {
     return (
         <main className=" bg-brand-gray">
 
-            <SubHeroSection
+            {/* <SubHeroSection
                 label={hero?.label}
                 header={hero?.header}
                 description={hero?.description}
@@ -36,12 +36,20 @@ export default function AboutUsPage() {
                 image={ourMission?.image}
                 buttonLabel={ourMission?.buttonLabel}
             />
+
+           */}
+            <OurMission
+                header={ourMission?.header}
+                points={ourMission?.points}
+                description={ourMission?.description}
+                image={ourMission?.image}
+                buttonLabel={ourMission?.buttonLabel}
+            />
             <MiniCardSection
                 header={cardSection?.header}
                 description={cardSection?.description}
                 cards={cardSection?.cards}
             />
-
             <BioSection
                 header={bioSection?.header}
                 description={bioSection?.description}
