@@ -23,8 +23,8 @@ export default function UspSection({ header, description, points, uspImage }) {
                         ))}
                     </div>
 
-                    <div className="flex justify-center md:justify-start">
-                        <Button label="Book My Strategy Call" width="auto" />
+                    <div className="flex justify-center md:justify-start w-full md:w-fit lg:w-fit 2xl:w-fit ">
+                        <Button label="Book My Strategy Call" width="full" />
                     </div>
                 </div>
 

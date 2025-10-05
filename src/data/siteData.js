@@ -138,7 +138,8 @@ const siteData = {
                     "number": "5+",
                     "label": "Countries Served"
                 }
-            ]
+            ],
+            "buttonLabel": "Book My Strategy Call"
         },
         "cardSection": {
             "header": {

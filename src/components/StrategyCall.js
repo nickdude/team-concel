@@ -15,7 +15,9 @@ export default function StrategyCall({ header, description, buttonLabel }) {
                 {description}
             </p>
 
-            <Button label={buttonLabel} width="auto" />
+            <div className="flex flex-col items-center md:items-start gap-4 sm:gap-6 w-full md:w-fit lg:w-fit 2xl:w-fit mx-auto md:mx-0">
+                <Button label={buttonLabel} width="full" />
+            </div>
         </section>
     );
 }

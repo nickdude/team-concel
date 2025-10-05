@@ -61,6 +61,7 @@ export default function Home() {
         header={countSection?.header}
         description={countSection?.description}
         counts={countSection?.counts}
+        buttonLabel={countSection?.buttonLabel}
       />
       <CardSection
         header={cardSection?.header}

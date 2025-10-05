@@ -1,7 +1,7 @@
 import Button from "./Button";
 import CountCard from "./CountCard";
 
-export default function CountSection({ header, description, counts }) {
+export default function CountSection({ header, description, counts, buttonLabel }) {
     return (
         <section className="bg-brand-gold py-16 px-4 sm:px-8 md:px-16 lg:px-36 2xl:px-44">
             <h1 className='text-left font-onest text-[2.13rem] md:text-[2.5rem] font-semibold text-navy leading-[130%] tracking-[-0.67px]'>{header?.simple}
@@ -12,7 +12,9 @@ export default function CountSection({ header, description, counts }) {
                     <CountCard key={index} title={count.label} value={count.number} />
                 ))}
             </div>
-            <Button label="Book My Strategy Call" width="auto" />
+            <div className="flex flex-col items-center md:items-start gap-4 sm:gap-6 w-full md:w-fit lg:w-fit 2xl:w-fit mx-auto md:mx-0">
+                <Button label={buttonLabel} width="full" />
+            </div>
         </section>
     )
 }      
