@@ -145,6 +145,7 @@ const siteData = {
                 "simple": "Startup-First",
                 "italic": " Legal Solutions"
             },
+            "description": "Whether you’re raising, scaling, or crossing borders — we cover the stuff that keeps founders up at night.",
             "cards": [
                 {
                     "image": "/assets/solution1.svg",
@@ -1022,7 +1023,7 @@ const siteData = {
             "title": "Main Links",
             "links": [
                 {
-                    "label": "title",
+                    "label": "Page 1",
                     "href": "/page1"
                 },
                 {

@@ -35,6 +35,17 @@ export default function Home() {
 
   return (
     <main className="space-y-12 bg-brand-gray">
+      {/* <HeroSection
+        label={hero?.label}
+        header={hero?.header}
+        description={hero?.description}
+        logos={hero?.logos}
+        tag={hero?.tag}
+        subTag={hero?.subTag}
+        buttonLabel={hero?.buttonLabel}
+      />
+      
+      */}
       <HeroSection
         label={hero?.label}
         header={hero?.header}
@@ -44,6 +55,7 @@ export default function Home() {
         subTag={hero?.subTag}
         buttonLabel={hero?.buttonLabel}
       />
+
       <BorderlessCardSection
         header={borderlessSection?.header}
         cards={borderlessSection?.cards}
@@ -54,6 +66,7 @@ export default function Home() {
         points={uspSection?.points}
         uspImage={uspSection?.uspImage}
       />
+
       <CountSection
         header={countSection?.header}
         description={countSection?.description}
@@ -61,6 +74,7 @@ export default function Home() {
       />
       <CardSection
         header={cardSection?.header}
+        description={cardSection?.description}
         cards={cardSection?.cards}
       />
       <ProcessSection
