@@ -127,11 +127,11 @@ const siteData = {
                     "label": "Total Deal Value"
                 },
                 {
-                    "number": "200+",
+                    "number": "100+",
                     "label": "Successful Deals"
                 },
                 {
-                    "number": "5+",
+                    "number": "200+",
                     "label": "Satisfied Clients "
                 },
                 {
@@ -362,12 +362,12 @@ const siteData = {
                     "title": "In Total Deal Value"
                 },
                 {
-                    "value": "200+",
+                    "value": "100+",
                     "label": "Proven success",
                     "title": "Successful Deals"
                 },
                 {
-                    "value": "5+",
+                    "value": "200+",
                     "label": "Trusted worldwide",
                     "title": "Satisfied Clients"
                 },

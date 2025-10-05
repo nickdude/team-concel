@@ -49,9 +49,9 @@ function FaqItem({ faq, isOpen, toggle }) {
                 onClick={toggle}
                 className="w-full flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4 text-left text-brand-navy font-normal text-base sm:text-lg md:text-xl leading-[28px] sm:leading-[32px] md:leading-[34px]"
             >
-                {faq.question}
+                <span className="flex-1 pr-4">{faq.question}</span>
                 <ChevronDown
-                    className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                    className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                 />
             </button>
 
