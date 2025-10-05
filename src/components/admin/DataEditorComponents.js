@@ -1,6 +1,41 @@
 import React from 'react';
+import ImageUploader from './ImageUploader';
 
-const EditableField = ({ label, value, onChange, type = 'text' }) => {
+const EditableField = ({ label, value, onChange, type = 'text', uniqueId }) => {
+    // Detect if this is an image field based on the value or label
+    const hasImageValue = value && typeof value === 'string' &&
+        (value.includes('/assets/') || value.includes('.jpg') || value.includes('.png') ||
+            value.includes('.svg') || value.includes('.gif') || value.includes('.webp'));
+
+    const hasImageLabel = label && typeof label === 'string' && (
+        label.toLowerCase().includes('image') ||
+        label.toLowerCase().includes('logo') ||
+        label.toLowerCase().includes('src') ||
+        label.toLowerCase().includes('photo') ||
+        label.toLowerCase().includes('avatar') ||
+        label.toLowerCase().includes('icon')
+    );
+
+    const isImageField = hasImageValue || hasImageLabel;
+
+    if (isImageField) {
+        // Determine folder based on the current path or label
+        let folder = 'uploads';
+        if (label.toLowerCase().includes('logo')) folder = 'logos';
+        else if (label.toLowerCase().includes('icon')) folder = 'icons';
+        else if (label.toLowerCase().includes('author') || label.toLowerCase().includes('avatar')) folder = 'authors';
+
+        return (
+            <ImageUploader
+                label={label}
+                currentImage={value}
+                onImageChange={onChange}
+                folder={folder}
+                uniqueId={uniqueId}
+            />
+        );
+    }
+
     if (type === 'textarea' || (typeof value === 'string' && value.length > 100)) {
         return (
             <div className="mb-4">
@@ -76,34 +111,22 @@ const ArrayEditor = ({ label, items, onChange }) => {
             </div>
 
             <div className="border border-gray-300 rounded-md p-4 bg-gray-50 max-h-80 overflow-y-auto">
-                {items.map((item, index) => (
-                    <div key={index} className="mb-4 p-4 bg-white rounded border relative">
-                        <div className="flex justify-between items-center mb-2">
-                            <h4 className="font-medium text-gray-700">Item {index + 1}</h4>
-                            <button
-                                onClick={() => removeItem(index)}
-                                className="px-2 py-1 bg-red-500 text-white text-xs rounded hover:bg-red-600"
-                            >
-                                Remove
-                            </button>
-                        </div>
+                {items.map((item, index) => {
+                    // Create a content-based key that's stable
+                    const itemKey = typeof item === 'object'
+                        ? `${index}-${JSON.stringify(item).slice(0, 50)}`
+                        : `${index}-${item}`;
 
-                        {typeof item === 'object' ? (
-                            <ObjectEditor
-                                data={item}
-                                onChange={(newItem) => updateItem(index, newItem)}
-                            />
-                        ) : (
-                            <input
-                                type="text"
-                                value={item}
-                                onChange={(e) => updateItem(index, e.target.value)}
-                                className="w-full p-2 border border-gray-300 rounded-md"
-                                placeholder={`Item ${index + 1}`}
-                            />
-                        )}
-                    </div>
-                ))}
+                    return (
+                        <ArrayItemEditor
+                            key={itemKey}
+                            item={item}
+                            index={index}
+                            onUpdate={(newItem) => updateItem(index, newItem)}
+                            onRemove={() => removeItem(index)}
+                        />
+                    );
+                })}
 
                 {items.length === 0 && (
                     <p className="text-gray-500 text-center py-4">No items yet. Click &quot;Add Item&quot; to get started.</p>
@@ -113,7 +136,39 @@ const ArrayEditor = ({ label, items, onChange }) => {
     );
 };
 
-const ObjectEditor = ({ data, onChange, label }) => {
+const ArrayItemEditor = ({ item, index, onUpdate, onRemove }) => {
+    return (
+        <div className="mb-4 p-4 bg-white rounded border relative">
+            <div className="flex justify-between items-center mb-2">
+                <h4 className="font-medium text-gray-700">Item {index + 1}</h4>
+                <button
+                    onClick={onRemove}
+                    className="px-2 py-1 bg-red-500 text-white text-xs rounded hover:bg-red-600"
+                >
+                    Remove
+                </button>
+            </div>
+
+            {typeof item === 'object' ? (
+                <ObjectEditor
+                    data={item}
+                    onChange={onUpdate}
+                    itemIndex={index}
+                />
+            ) : (
+                <input
+                    type="text"
+                    value={item}
+                    onChange={(e) => onUpdate(e.target.value)}
+                    className="w-full p-2 border border-gray-300 rounded-md"
+                    placeholder={`Item ${index + 1}`}
+                />
+            )}
+        </div>
+    );
+};
+
+const ObjectEditor = ({ data, onChange, label, itemIndex }) => {
     const updateField = (key, value) => {
         onChange({ ...data, [key]: value });
     };
@@ -129,12 +184,14 @@ const ObjectEditor = ({ data, onChange, label }) => {
             <div className={label ? "border border-gray-300 rounded-md p-4 bg-gray-50" : ""}>
                 {Object.entries(data).map(([key, value]) => {
                     if (typeof value === 'string') {
+                        const uniqueId = `${label || 'object'}-${itemIndex || 0}-${key}-${Date.now()}`;
                         return (
                             <EditableField
                                 key={key}
                                 label={key}
                                 value={value}
                                 onChange={(newValue) => updateField(key, newValue)}
+                                uniqueId={uniqueId}
                             />
                         );
                     } else if (Array.isArray(value)) {

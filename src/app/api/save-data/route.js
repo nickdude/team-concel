@@ -79,8 +79,6 @@ export async function POST(request) {
             }
         }
 
-
-
         // Path to the siteData.js file
         const filePath = path.join(process.cwd(), 'src', 'data', 'siteData.js');
 
@@ -96,6 +94,8 @@ export async function POST(request) {
         const fileContent = `const siteData = ${JSON.stringify(data, null, 4)};
 
 export default siteData;`;
+
+        // Write the file
         fs.writeFileSync(filePath, fileContent, 'utf8');
 
         return NextResponse.json({

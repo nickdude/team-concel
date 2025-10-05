@@ -100,8 +100,8 @@ const siteData = {
         },
         "uspSection": {
             "header": {
-                "simple": "The Fix We Bring",
-                "italic": ""
+                "simple": "How We Make Legal",
+                "italic": " Work for You"
             },
             "description": "From fundraising docs to cross-border compliance, we keep you investor-ready and deal-ready. Legal that moves at the speed of your big idea.",
             "points": [
@@ -117,7 +117,7 @@ const siteData = {
         },
         "countSection": {
             "header": {
-                "simple": "India’s First Legal Practice for",
+                "simple": "Legal Practice for",
                 "italic": " Emerging Companies"
             },
             "description": "We focus exclusively on startups and investors, helping them handle legal complexities around formation, compliance, privacy, governance, and scale.",
@@ -221,7 +221,7 @@ const siteData = {
                     "authorName": "Siddhartha,",
                     "authorTitle": "Managing Partner, The Neon Fund",
                     "color": "gold"
-                },
+                }
             ]
         },
         "strategyCallSection": {
@@ -289,7 +289,7 @@ const siteData = {
                         "Employment",
                         "IP Protection & Ringfencing",
                         "Data Privacy",
-                        "Dispute Resolution",
+                        "Dispute Resolution"
                     ],
                     "buttonLabel": "Secure Your Deal Today"
                 },
@@ -305,7 +305,7 @@ const siteData = {
                         "Mergers",
                         "Demergers",
                         "Corporate Restructuring",
-                        "Exits",
+                        "Exits"
                     ],
                     "buttonLabel": "Secure Your Deal Today"
                 },
@@ -571,7 +571,7 @@ const siteData = {
                     "authorName": "Siddhartha,",
                     "authorTitle": "Managing Partner, The Neon Fund",
                     "color": "gold"
-                },
+                }
             ]
         },
         "legalExpertiseSection": {
@@ -725,7 +725,7 @@ const siteData = {
                     "authorName": "Siddhartha,",
                     "authorTitle": "Managing Partner, The Neon Fund",
                     "color": "gold"
-                },
+                }
             ]
         },
         "legalExpertiseSection": {
@@ -884,7 +884,7 @@ const siteData = {
                     "authorName": "Siddhartha,",
                     "authorTitle": "Managing Partner, The Neon Fund",
                     "color": "gold"
-                },
+                }
             ]
         },
         "legalExpertiseSection": {
@@ -953,7 +953,7 @@ const siteData = {
         "cardSection": {
             "header": {
                 "simple": "What Makes Us ",
-                "italic": " Different?",
+                "italic": " Different?"
             },
             "description": "Most firms sell billable hours. We deliver outcomes.",
             "cards": [
@@ -977,7 +977,7 @@ const siteData = {
                     "description": "Fractional support, contracts-as-a-service, and scalable models. Legal firepower without burning runway.",
                     "image": "/assets/solution1.svg"
                 }
-            ],
+            ]
         },
         "bioSection": {
             "header": {
@@ -987,7 +987,7 @@ const siteData = {
             "image": "/assets/bio.svg",
             "buttonLabel": "Book My Strategy Call",
             "description": "John is a battle-tested M&A, PE, and VC lawyer with over a decade of experience. He has represented startups and global giants alike, closing 80+ deals worth USD 20Bn across seven jurisdictions. Previously, he worked with Alpha Wave Global, AZB & Partners, and Trilegal, where he helped global PE funds, VCs, and corporations structure, negotiate, and execute high-value transactions. Between 2021–22 alone, John advised on 45+ venture-growth investments worth USD 12Bn across India, Southeast Asia, and the US. With Team Counsel, John’s mission is to reimagine how legal services are delivered to startups and investors — making them faster, leaner, and tech-enabled, without compromising on global quality standards.Beyond the deals, John is passionate about mentorship and empowering founders. He also loves reading, music, and time with Rocky, his pet lab.",
-            "funFact": "If you’re building or fundraising, chances are John’s already helped someone in your shoes navigate the exact same path.",
+            "funFact": "If you’re building or fundraising, chances are John’s already helped someone in your shoes navigate the exact same path."
         },
         "strategyCallSection": {
             "header": {
