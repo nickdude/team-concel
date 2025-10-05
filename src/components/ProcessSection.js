@@ -2,12 +2,12 @@ import Hr from "./Hr";
 
 export default function ProcessSection({ header, steps, image }) {
     return (
-        <section className="py-12 sm:py-16 flex flex-col items-center">
+        <section className="py-0 sm:py-16 flex flex-col items-center">
             <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 md:gap-20 mb-12 md:mb-20 w-full px-6 sm:px-12 md:px-36 2xl:px-44">
 
                 {/* Left Side */}
                 <div className="w-full md:max-w-sm text-left md:text-left">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-onest font-semibold text-brand-navy leading-[130%] tracking-[-0.67px]">
+                    <h2 className="text-[2.13rem] sm:text-3xl md:text-4xl font-onest font-semibold text-brand-navy leading-[130%] tracking-[-0.67px]">
                         {header?.simple} <br />
                         <span className="italic font-ptserif font-normal text-brand-navy">
                             {header?.italic}

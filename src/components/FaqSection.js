@@ -15,7 +15,7 @@ export default function FaqSection({ header, description, faqs }) {
 
                 {/* Left Side */}
                 <div className="w-full md:w-[374px] text-left md:text-left">
-                    <h2 className="text-2xl sm:text-3xl md:text-[40px] font-semibold text-brand-navy font-onest leading-[130%] tracking-[-0.67px]">
+                    <h2 className="text-[2.13rem] sm:text-3xl md:text-[40px] font-semibold text-brand-navy font-onest leading-[130%] tracking-[-0.67px]">
                         {header.simple}{" "}
                         <span className="italic font-normal font-ptserif">{header.italic}</span>
                     </h2>

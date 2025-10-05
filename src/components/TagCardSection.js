@@ -5,7 +5,7 @@ export default function TagCardSection({ header, description, tags }) {
         <section className="py-12 sm:py-16 flex flex-col justify-center px-4 sm:px-8 md:px-36 2xl:px-44">
 
             {/* Header */}
-            <h1 className="text-left font-onest text-2xl sm:text-3xl md:text-4xl font-semibold text-navy leading-[130%] tracking-[-0.67px]">
+            <h1 className="text-left font-onest text-[2.13rem] sm:text-3xl md:text-4xl font-semibold text-navy leading-[130%] tracking-[-0.67px]">
                 {header?.simple}{" "}
                 <span className="text-navyAlpha font-ptserif font-normal italic">
                     {header?.italic}

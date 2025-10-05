@@ -16,7 +16,7 @@ export default function ProcessAccordion({ header, description, processes, butto
 
             {/* Left Side - Accordion */}
             <div className="flex flex-col w-full sm:w-[443px]">
-                <h2 className="text-2xl sm:text-3xl md:text-[40px] font-semibold text-brand-navy font-onest leading-[130%] tracking-[-0.67px]">
+                <h2 className="text-[2.13rem]  sm:text-3xl md:text-[40px] font-semibold text-brand-navy font-onest leading-[130%] tracking-[-0.67px]">
                     {header?.simple}{" "}
                     <span className="italic font-ptserif font-normal">{header?.italic}</span>
                 </h2>
