@@ -272,6 +272,59 @@ const siteData = {
             "description": "From incorporation to fundraising, contracts to compliance — we’re the legal partner founders trust when every move matters.",
             "buttonLabel": "Book Free Consultation"
         },
+        "ourSolutionSection": {
+            "header": {
+                "simple": "Our Tailored",
+                "italic": " Solutions"
+            },
+            "cards": [
+                {
+                    "image": "/assets/icons/corporate.svg",
+                    "label": "For Corporates",
+                    "description": "Corporate Structuring, Entry, Growth & Exit Strategies. We help founders build solid foundations and scale with confidence — from Day 1 to IPO.",
+                    "solutions": [
+                        "Business Formation & Incorporation",
+                        "Fundraising",
+                        "Regulatory Compliance & Corporate Governance",
+                        "Employment",
+                        "IP Protection & Ringfencing",
+                        "Data Privacy",
+                        "Dispute Resolution",
+                    ],
+                    "buttonLabel": "Secure Your Deal Today"
+                },
+                {
+                    "image": "/assets/icons/startup.svg",
+                    "label": "For Startups",
+                    "description": "Every deal is make-or-break. We ensure your fundraising, acquisitions, and partnerships don’t stall growth.",
+                    "solutions": [
+                        "Fundraising",
+                        "Joint Ventures",
+                        "Strategic Acquisitions",
+                        "Strategic Investments",
+                        "Mergers",
+                        "Demergers",
+                        "Corporate Restructuring",
+                        "Exits",
+                    ],
+                    "buttonLabel": "Secure Your Deal Today"
+                },
+                {
+                    "image": "/assets/icons/fund.svg",
+                    "label": "For Investors & Funds",
+                    "description": "Driving Impactful Investments with Tailored Legal Support From fund formation to portfolio management, we keep your capital secure and your deals clean.",
+                    "solutions": [
+                        "Fund Formation",
+                        "Deal Advisory",
+                        "Portfolio Management",
+                        "LP–GP Negotiations",
+                        "Regulatory & Compliance",
+                        "Corporate Advisory"
+                    ],
+                    "buttonLabel": "Secure Your Deal Today"
+                }
+            ]
+        },
         "cardSection": {
             "header": {
                 "simple": "Take your First Step Towards Growth",

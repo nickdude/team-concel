@@ -5,8 +5,10 @@ import CardSection from "@/components/CardSection";
 import JomboCountSection from "@/components/JomboCountSection";
 import FaqSection from "@/components/FaqSection";
 import siteData from "@/data/siteData";
+import SolutionCardSection from "@/components/SolutionCardSection";
 
 const hero = siteData?.practicePage?.hero;
+const ourSolution = siteData?.practicePage?.ourSolutionSection;
 const cardSection = siteData?.practicePage?.cardSection;
 const jomboCountSection = siteData?.practicePage?.jomboCountSection;
 const tagCardSection = siteData?.practicePage?.tagCardSection;
@@ -22,14 +24,18 @@ export default function PracticePage() {
                 description={hero?.description}
                 buttonLabel={hero?.buttonLabel}
             />
-            <CardSection
-                header={cardSection?.header}
-                cards={cardSection?.cards}
+            <SolutionCardSection
+                header={ourSolution?.header}
+                cards={ourSolution?.cards}
             />
             <JomboCountSection
                 header={jomboCountSection?.header}
                 description={jomboCountSection?.description}
                 counts={jomboCountSection?.counts}
+            />
+            <CardSection
+                header={cardSection?.header}
+                cards={cardSection?.cards}
             />
             <TagCardSection
                 header={tagCardSection?.header}
