@@ -25,7 +25,7 @@ const siteData = {
         },
         {
             "label": "About Us",
-            "href": "/about",
+            "href": "/about-us",
             "type": "link"
         }
     ],
@@ -841,6 +841,131 @@ const siteData = {
             },
             "description": "Scale faster with legal partners who think like founders.",
             "buttonLabel": "Get Legal Expertise Now"
+        },
+        "faqSection": {
+            "header": {
+                "simple": "Your questions",
+                "italic": " answered"
+            },
+            "description": "Still have questions? Here are some of our most frequently asked questions.",
+            "faqs": [
+                {
+                    "id": 1,
+                    "question": "What makes Team Counsel different from traditional law firms?",
+                    "answer": "We focus exclusively on startups and high-growth companies, providing flexible legal solutions that move at your speed."
+                },
+                {
+                    "id": 2,
+                    "question": "What are your pricing models?",
+                    "answer": "We offer transparent flat-fee, subscription, and fractional counsel pricing—no surprise hourly bills."
+                },
+                {
+                    "id": 3,
+                    "question": "How do I know if this is right for me?",
+                    "answer": "If you’re a founder, startup, or investor looking for proactive legal strategy instead of reactive lawyering, this is for you."
+                },
+                {
+                    "id": 4,
+                    "question": "Which industries do you specialize in?",
+                    "answer": "We work with tech, SaaS, fintech, health, consumer, and emerging markets—basically where innovation happens."
+                }
+            ]
+        }
+    },
+    "aboutUsPage": {
+        "hero": {
+            "label": "About Team Counsel",
+            "header": {
+                "simple": "Not your typical law firm.",
+                "italic": " Your startup’s legal partner."
+            },
+            "description": "Startups move fast. Lawyers don’t. That’s where we come in. Team Counsel is a next-generation legal consulting firm built exclusively for early-stage founders and investors. We’re not here to slow you down with jargon and red tape—we’re here to keep you investor-ready, deal-ready, and scaling with confidence.",
+            "buttonLabel": "Book Free Consultation"
+        },
+        "ourMissionSection": {
+            "header": {
+                "simple": "Our",
+                "italic": " Mission"
+            },
+            "description": "We exist to bolster the startup ecosystem by making world-class legal accessible, affordable, and founder-friendly. Our goal is simple:",
+            "points": [
+                "Help founders close faster, without legal bottlenecks.",
+                "Empower angel investors and VCs to back startups with clean, reliable structures.",
+                "Bridge the gap between legal and business so compliance never kills growth."
+            ],
+            "image": "/assets/bio.svg",
+            "buttonLabel": "Book My Strategy Call"
+        },
+        "cardSection": {
+            "header": {
+                "simple": "What Makes Us ",
+                "italic": " Different?",
+            },
+            "description": "Most firms sell billable hours. We deliver outcomes.",
+            "cards": [
+                {
+                    "label": "Startup-Native",
+                    "description": "We know the founder grind, and our frameworks are designed to keep pace with your hustle.",
+                    "image": "/assets/solution1.svg"
+                },
+                {
+                    "label": "Lifecycle Support",
+                    "description": "From incorporation to exit, we’re with you at every stage.",
+                    "image": "/assets/solution1.svg"
+                },
+                {
+                    "label": "Legal Design First",
+                    "description": "Clean, practical, and scalable legal structures that align with business goals.",
+                    "image": "/assets/solution1.svg"
+                },
+                {
+                    "label": "Affordable Access",
+                    "description": "Fractional support, contracts-as-a-service, and scalable models. Legal firepower without burning runway.",
+                    "image": "/assets/solution1.svg"
+                }
+            ],
+        },
+        "bioSection": {
+            "header": {
+                "simple": "Meet John Mathew",
+                "italic": "(Founder, Team Counsel)"
+            },
+            "image": "/assets/bio.svg",
+            "buttonLabel": "Book My Strategy Call",
+            "description": "John is a battle-tested M&A, PE, and VC lawyer with over a decade of experience. He has represented startups and global giants alike, closing 80+ deals worth USD 20Bn across seven jurisdictions. Previously, he worked with Alpha Wave Global, AZB & Partners, and Trilegal, where he helped global PE funds, VCs, and corporations structure, negotiate, and execute high-value transactions. Between 2021–22 alone, John advised on 45+ venture-growth investments worth USD 12Bn across India, Southeast Asia, and the US. With Team Counsel, John’s mission is to reimagine how legal services are delivered to startups and investors — making them faster, leaner, and tech-enabled, without compromising on global quality standards.Beyond the deals, John is passionate about mentorship and empowering founders. He also loves reading, music, and time with Rocky, his pet lab.",
+            "funFact": "If you’re building or fundraising, chances are John’s already helped someone in your shoes navigate the exact same path.",
+        },
+        "strategyCallSection": {
+            "header": {
+                "simple": "Why Founders?",
+                "italic": " Trust Us"
+            },
+            "description": "Because we’ve been where you are: buried in legal paperwork when you should be focused on building. Because investors know clean structures and strong compliance reduce risks. Because we don’t just advise—we fix problems before they stall your growth.",
+            "buttonLabel": "Book My Strategy Call"
+        },
+        "tagCardSection": {
+            "header": {
+                "simple": "Our",
+                "italic": " Impact"
+            },
+            "description": "",
+            "tags": [
+                {
+                    "icon": "/assets/icons/speed.svg",
+                    "label": "Empowering early-stage startups and investors across Five countries. US.",
+                    "value": ""
+                },
+                {
+                    "icon": "/assets/icons/handshake.svg",
+                    "label": "Supporting Seed to Series A founders with practical, startup-speed legal",
+                    "value": ""
+                },
+                {
+                    "icon": "/assets/icons/finance.svg",
+                    "label": "Helping founders raise confidently, scale globally, and exit cleanly.",
+                    "value": ""
+                }
+            ]
         },
         "faqSection": {
             "header": {
