@@ -24,7 +24,7 @@ export default function SolutionCard({ label, description, image, solutions }) {
             </ul>
 
             {/* Button */}
-            <Button label="Secure Your Deal Today" width="full" />
+            <Button label="Secure Your Deal Today" width="full" link="https://topmate.io/john_mathew" />
         </div>
     );
 }

@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import Button from "./Button";
 import DropDownButton from "./DropDownButton";
 
-export default function ProcessAccordion({ header, description, processes, buttonLabel }) {
+export default function ProcessAccordion({ header, description, processes, buttonLabel, image }) {
     const [openStep, setOpenStep] = useState(1);
 
     const toggleStep = (id) => {
@@ -32,12 +32,12 @@ export default function ProcessAccordion({ header, description, processes, butto
                     ))}
                 </div>
 
-                <Button label={buttonLabel} width="auto" />
+                <Button label={buttonLabel} width="auto" link="https://topmate.io/john_mathew" />
             </div>
 
             {/* Right Side - Image Placeholder */}
-            <div className="w-full sm:flex-1 bg-gray-200 rounded-xl flex items-center justify-center min-h-[300px] sm:min-h-[500px]">
-                {/* Image can go here */}
+            <div className="w-full sm:flex-1 bg-gray-200 rounded-xl flex items-center justify-center min-h-[320px] sm:min-h-[500px]">
+                <img src={image} alt="Process Illustration" className="max-w-full max-h-full object-contain" />
             </div>
         </section>
     );

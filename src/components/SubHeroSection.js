@@ -19,7 +19,7 @@ export default function SubHeroSection({ label, header, description, buttonLabel
             </p>
 
             <div className="flex flex-col items-center md:items-start gap-4 sm:gap-6 w-full md:w-fit lg:w-fit 2xl:w-fit mx-auto md:mx-0">
-                <Button label={buttonLabel} width="full" />
+                <Button label={buttonLabel} width="full" link="https://topmate.io/john_mathew" />
             </div>
         </section>
     );

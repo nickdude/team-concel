@@ -11,7 +11,7 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="w-full border-b">
+        <header className="w-full border-b sticky top-0 z-50 ">
             {/* Top strip */}
             <div className="bg-brand-beige text-brand-navy text-xs leading-5 font-normal text-center py-1">
                 <span>Now get a FREE legal consultation </span>
@@ -24,7 +24,7 @@ export default function Navbar() {
             </div>
 
             {/* Main Navbar */}
-            <nav className="flex items-center w-[100vw] 2xl:px-28">
+            <nav className="flex items-center w-[100vw] 2xl:px-28 bg-brand-white">
                 <div className="flex items-center sm:justify-evenly justify-between px-6 py-4 bg-white w-full md:w-[45vw]">
                     {/* Logo */}
                     <Link className="flex items-center space-x-2" href="/">
@@ -65,7 +65,7 @@ export default function Navbar() {
 
                 {/* Right Section (Desktop Only) */}
                 <div className="hidden md:flex items-center justify-end px-28 py-4 bg-white w-[55vw]">
-                    <Button label="Contact Us" />
+                    <Button label="Contact Us" link="https://topmate.io/john_mathew" />
                 </div>
             </nav>
 

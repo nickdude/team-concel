@@ -21,11 +21,11 @@ export default function HeroSection({ label, header, description, logos, tag, su
                     <p className="text-base sm:text-base md:text-base text-brand-deepBlue leading-[27px] font-onest mb-8 mt-4">
                         {description}
                     </p>
-                    <div className="flex flex-col items-center md:items-start gap-4 sm:gap-6 w-full md:w-fit lg:w-fit 2xl:w-fit mx-auto md:mx-0">
-                        <Button label={buttonLabel} width="full" />
-                        <p className="font-onest font-medium text-[13px] sm:text-[15px] leading-6 underline text-brand-blue">
+                    <div className="flex flex-col items-center md:items-center gap-4 sm:gap-6 w-full md:w-fit lg:w-fit 2xl:w-fit mx-auto md:mx-0">
+                        <Button label={buttonLabel} width="full" link="https://topmate.io/john_mathew" />
+                        <a className="font-onest font-medium text-[13px] sm:text-[15px] leading-6 underline text-brand-blue" >
                             {tag}
-                        </p>
+                        </a>
                     </div>
                 </div>
 

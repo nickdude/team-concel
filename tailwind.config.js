@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        '125': '125%',
+      },
       fontFamily: {
         onest: ["var(--font-onest)", "sans-serif"],
         bricolage: ["var(--font-bricolage)", "sans-serif"],
@@ -33,7 +36,8 @@ module.exports = {
           darkBlue: "#143150",
           darkBlueAlpha: "#14315026",
           slate: "#16427140",
-          rose: "#F8F7F5"
+          rose: "#F8F7F5",
+          teal: "#B1BFC8",
 
         },
       },

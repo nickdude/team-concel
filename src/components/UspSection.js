@@ -24,7 +24,7 @@ export default function UspSection({ header, description, points, uspImage }) {
                     </div>
 
                     <div className="flex justify-center md:justify-start w-full md:w-fit lg:w-fit 2xl:w-fit ">
-                        <Button label="Book My Strategy Call" width="full" />
+                        <Button label="Book My Strategy Call" width="full" link="https://topmate.io/john_mathew" />
                     </div>
                 </div>
 

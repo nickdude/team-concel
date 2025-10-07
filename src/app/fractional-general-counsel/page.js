@@ -32,6 +32,7 @@ export default function FGCSolutionsPage() {
                 description={processAccordion?.description}
                 processes={processAccordion?.processes}
                 buttonLabel={processAccordion?.buttonLabel}
+                image={processAccordion?.image}
             />
             <BlogCardSection
                 header={blogCardSection?.header}

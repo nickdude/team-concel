@@ -1,8 +1,8 @@
 import Button from "./Button";
 
-export default function Card({ image, label, description }) {
+export default function Card({ image, label, description, link, own }) {
     return (
-        <div className="flex flex-col w-full sm:w-[48%] lg:w-[30%] space-y-4 items-start rounded-3xl bg-white shadow-md">
+        <div className="flex flex-col w-full sm:w-[48%] lg:w-[31.5%] space-y-4 items-start rounded-3xl bg-white">
             {/* Image */}
             <img
                 src={image}
@@ -21,7 +21,7 @@ export default function Card({ image, label, description }) {
                     </p>
                 </div>
 
-                <Button label="Learn More" width="full" />
+                <Button label="Learn More" width="full" link={link} own={own} />
             </div>
         </div>
     );
