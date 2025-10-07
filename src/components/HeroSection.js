@@ -23,7 +23,11 @@ export default function HeroSection({ label, header, description, logos, tag, su
                     </p>
                     <div className="flex flex-col items-center md:items-center gap-4 sm:gap-6 w-full md:w-fit lg:w-fit 2xl:w-fit mx-auto md:mx-0">
                         <Button label={buttonLabel} width="full" link="https://topmate.io/john_mathew" />
-                        <a className="font-onest font-medium text-[13px] sm:text-[15px] leading-6 underline text-brand-blue" >
+                        <a
+                            href="https://wa.me/919535539996"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-onest font-medium text-[13px] sm:text-[15px] leading-6 underline text-brand-blue" >
                             {tag}
                         </a>
                     </div>
