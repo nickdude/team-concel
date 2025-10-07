@@ -12,13 +12,13 @@ export default function HeroSection({ label, header, description, logos, tag, su
                 {/* Left Side (Text) */}
                 <div className="flex flex-col w-full md:w-[380px] text-left">
                     <Label text={label} />
-                    <h1 className='text-[2.13rem] sm:text-3xl md:text-5xl font-onest font-semibold text-navy leading-[125%] tracking-[-1px] mt-3 text-left'>
+                    <h1 className='text-[2.13rem] sm:text-3xl md:text-5xl font-onest font-semibold text-navy leading-[125%] tracking-[-1px] mt-3 text-left' style={{ lineHeight: '1.2' }}>
                         {header?.simple}{" "}
                         <span className='text-navyAlpha font-ptserif font-normal italic'>
                             {header?.italic}
                         </span>
                     </h1>
-                    <p className="text-base sm:text-base md:text-base text-brand-deepBlue leading-[27px] font-onest mb-8 mt-4">
+                    <p className="text-base sm:text-base md:text-base text-brand-deepBlue leading-[27px] font-onest mb-14 mt-4">
                         {description}
                     </p>
                     <div className="flex flex-col items-center md:items-center gap-4 sm:gap-6 w-full md:w-fit lg:w-fit 2xl:w-fit mx-auto md:mx-0">

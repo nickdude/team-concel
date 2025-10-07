@@ -118,7 +118,7 @@ const siteData = {
             "label": "Startup-First Legal Solutions",
             "header": {
                 "simple": "Legal that moves at the speed of",
-                "italic": " Your Big Idea."
+                "italic": "Your Big Idea."
             },
             "description": "Cut through legal complexity with a startup-native approach that’s fast, compliant, and built for scale. ",
             "tag": "Talk to a Legal Strategist",
