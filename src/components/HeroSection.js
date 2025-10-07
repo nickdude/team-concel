@@ -14,11 +14,11 @@ export default function HeroSection({ label, header, description, logos, tag, su
                     <Label text={label} />
                     <h1 className='text-[2.13rem] sm:text-3xl md:text-5xl font-onest font-semibold text-navy leading-[125%] tracking-[-1px] mt-3 text-left' style={{ lineHeight: '1.2' }}>
                         {header?.simple}{" "}
-                        <span className='text-navyAlpha font-ptserif font-normal italic'>
+                        <span className='font-ptserif font-normal italic'>
                             {header?.italic}
                         </span>
                     </h1>
-                    <p className="text-base sm:text-base md:text-base text-brand-deepBlue leading-[27px] font-onest mb-14 mt-4">
+                    <p className="text-base sm:text-base md:text-base text-brand-navyAlpha leading-[27px] font-onest mb-14 mt-4">
                         {description}
                     </p>
                     <div className="flex flex-col items-center md:items-center gap-4 sm:gap-6 w-full md:w-fit lg:w-fit 2xl:w-fit mx-auto md:mx-0">
@@ -41,6 +41,24 @@ export default function HeroSection({ label, header, description, logos, tag, su
 
             {/* Logos Scroll */}
             <div className="flex flex-col items-center justify-center mt-6 mb-4 w-full">
+                <p className="font-semibold text-[12px] sm:text-[13px] leading-6 tracking-[1px] mb-8">
+                    {subTag}
+                </p>
+                <div className="relative w-full overflow-hidden py-2">
+                    <div className="flex animate-scrollX gap-5 md:gap-16 whitespace-nowrap">
+                        {[...logos, ...logos].map((logo, index) => (
+                            <img
+                                key={index}
+                                src={logo.src}
+                                alt={logo.alt}
+                                className="h-6 sm:h-14 object-contain inline-block"
+                            />
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* <div className="flex flex-col items-center justify-center mt-6 mb-4 w-full">
                 <p className="font-semibold text-[12px] sm:text-[13px] leading-6 tracking-[1px] mb-4">{subTag}</p>
                 <div className="relative w-full overflow-x-auto py-2">
                     <div className="flex animate-scrollX gap-5 md:gap-20">
@@ -54,7 +72,7 @@ export default function HeroSection({ label, header, description, logos, tag, su
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <Hr />
         </section>

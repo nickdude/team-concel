@@ -5,7 +5,7 @@ export default function StrategyCall({ header, description, buttonLabel }) {
         <section className="flex flex-col items-center bg-brand-grayish py-16 sm:py-20 md:py-28 justify-center w-full px-6 sm:px-12 md:px-0">
             <h1 className="text-center font-onest text-2xl sm:text-3xl md:text-[40px] font-semibold text-navy leading-[130%] tracking-[-0.67px] md:px-60">
                 {header?.simple}{" "}
-                <span className="text-navyAlpha font-ptserif font-normal italic">
+                <span className="font-ptserif font-normal italic">
                     {header?.italic}
                 </span>{" "}
                 {header?.againSimple}

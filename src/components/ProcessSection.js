@@ -7,7 +7,7 @@ export default function ProcessSection({ header, steps, image }) {
 
                 {/* Left Side */}
                 <div className="w-full md:max-w-sm text-left md:text-left">
-                    <h2 className="text-[2.13rem] sm:text-3xl md:text-4xl font-onest font-semibold text-brand-navy leading-[130%] tracking-[-0.67px]">
+                    <h2 className="text-[2.13rem] sm:text-3xl md:text-4xl font-onest font-semibold text-brand-navy leading-[130%] tracking-[-0.67px]" style={{ lineHeight: '1.2' }}>
                         {header?.simple} <br />
                         <span className="italic font-ptserif font-normal text-brand-navy">
                             {header?.italic}

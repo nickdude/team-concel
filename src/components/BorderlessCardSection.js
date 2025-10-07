@@ -10,7 +10,7 @@ export default function BorderlessCardSection({ header, cards }) {
                 {/* Heading */}
                 <h1 className="text-left font-onest text-[2.13rem] sm:text-3xl md:text-4xl font-semibold text-navy leading-[130%] tracking-[-0.67px]">
                     {header?.simple}{' '}
-                    <span className="text-navyAlpha font-ptserif font-normal italic">
+                    <span className="font-ptserif font-normal italic">
                         {header?.italic}
                     </span>
                 </h1>

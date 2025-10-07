@@ -23,7 +23,8 @@ module.exports = {
           navy: "#1B4878",
           deepBlue: "#1F558E",
           white: "#FFFFFF",
-          navyAlpha: "#1B4878B2",
+          navyAlpha: "#5C7B9B",
+          navyDarkAlpha: "#1B4878CC",
           gold: "#FCD183",
           beige: "#EBDBCB",
           sand: "#D9BCA2",
@@ -38,6 +39,8 @@ module.exports = {
           slate: "#16427140",
           rose: "#F8F7F5",
           teal: "#B1BFC8",
+          sky: "#4A74A1",
+          cyan: "#5C7B9B"
 
         },
       },

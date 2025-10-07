@@ -152,10 +152,6 @@ const siteData = {
                     "src": "/assets/logos/logo7.svg",
                     "alt": "Logo 7"
                 },
-                {
-                    "src": "/assets/logos/logo8.svg",
-                    "alt": "Logo 8"
-                }
             ],
             "buttonLabel": "Book My Strategy Call"
         },
@@ -185,7 +181,7 @@ const siteData = {
         "uspSection": {
             "header": {
                 "simple": "How We Make Legal",
-                "italic": " Work for You"
+                "italic": "Work for You"
             },
             "description": "From fundraising docs to cross-border compliance, we keep you investor-ready and deal-ready. Legal that moves at the speed of your big idea.",
             "points": [
