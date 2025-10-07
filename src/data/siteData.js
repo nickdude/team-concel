@@ -1236,6 +1236,35 @@ const siteData = {
             ]
             
         },
+        "faqSection": {
+            "header": {
+                "simple": "Your questions",
+                "italic": " answered"
+            },
+            "description": "Still have questions? Here are some of our most frequently asked questions.",
+            "faqs": [
+                {
+                    "id": 1,
+                    "question": "What makes Team Counsel different from traditional law firms?",
+                    "answer": "We focus exclusively on startups and high-growth companies, providing flexible legal solutions that move at your speed."
+                },
+                {
+                    "id": 2,
+                    "question": "What are your pricing models?",
+                    "answer": "Our services are tailored to be cost-effective for early-stage startups. We offer scalable legal solutions based on your startup’s growth stage and specific needs, with no surprise fees."
+                },
+                {
+                    "id": 3,
+                    "question": "How do I know if this is right for me?",
+                    "answer": "We offer a free legal audit to assess your startup's unique needs and recommend solutions that match your growth stage and objectives."
+                },
+                {
+                    "id": 4,
+                    "question": "Which industries do you specialize in?",
+                    "answer": "We specialize in providing legal support for startups and funds across various industries, including tech, SaaS, health and wellness, and impact-driven ventures."
+                }
+            ]
+        }
     
     }
 }
