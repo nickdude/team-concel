@@ -36,7 +36,7 @@ export default function ProcessAccordion({ header, description, processes, butto
             </div>
 
             {/* Right Side - Image Placeholder */}
-            <div className="w-full sm:flex-1 bg-gray-200 rounded-xl flex items-center justify-center min-h-[320px] sm:min-h-[500px]">
+            <div className="w-full sm:flex-1 rounded-xl flex items-center justify-center min-h-[320px] sm:min-h-[500px]">
                 <img src={image} alt="Process Illustration" className="w-fit h-fit object-contain" />
             </div>
         </section>
