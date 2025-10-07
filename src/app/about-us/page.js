@@ -22,7 +22,11 @@ const faqSection = siteData?.aboutUsPage?.faqSection;
 export default function AboutUsPage() {
     return (
         <main className=" bg-brand-gray">
-            <OurMission
+            <div className="space-y-12 text-brand-navy text-5xl h-screen flex items-center justify-center font-semibold">
+                Coming Soon...
+
+            </div>
+            {/* <OurMission
                 header={ourMission?.header}
                 points={ourMission?.points}
                 description={ourMission?.description}
@@ -55,7 +59,7 @@ export default function AboutUsPage() {
                 header={faqSection?.header}
                 faqs={faqSection?.faqs}
                 description={faqSection?.description}
-            />
+            /> */}
         </main>
     );
 }
