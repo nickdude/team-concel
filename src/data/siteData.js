@@ -28,11 +28,11 @@ const siteData = {
                 }
             ]
         },
-        // {
-        //     "label": "About Us",
-        //     "href": "/about-us",
-        //     "type": "link"
-        // }
+        {
+            "label": "About Us",
+            "href": "/about-us",
+            "type": "link"
+        }
     ],
     "footer": {
         "about": {
