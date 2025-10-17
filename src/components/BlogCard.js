@@ -1,7 +1,7 @@
 export default function BlogCard({ description, authorImage, authorName, authorTitle, color }) {
 
     return (
-        <div className={`flex flex-col min-w-[300px] md:min-w-[558px] space-y-0 md:space-y-8 items-start rounded-3xl bg-brand-gold border border-brand-sand px-6 pt-6 justify-between`}>
+        <div className={`flex flex-col min-w-[300px] md:min-w-[558px] space-y-0 md:space-y-8 items-start rounded-3xl bg-brand-${color} border border-brand-grayish px-6 pt-6 justify-between`}>
             <img src="/assets/icons/qoute.svg" alt="qoute" className="w-fit h-7 object-cover" />
             <p className="text-brand-darkBlue text-[15px] font-onest leading-[165%]">{description}</p>
             <div className="flex items-center space-x-4 mt-auto py-8 border-t border-brand-darkBlueAlpha w-full">

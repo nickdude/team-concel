@@ -15,17 +15,17 @@ const siteData = {
             "type": "dropdown",
             "subItems": [
                 {
-                    "label": "Legal Design Transformation",
+                    "label": "Legal Design and Transformation",
                     "href": "/legal-design-transformation"
                 },
                 {
-                    "label": "Contract As A Service (CAAS)",
-                    "href": "/contract-as-a-service"
+                    "label": "Fractional General Counsel",
+                    "href": "/fractional-general-counsel"
                 },
                 {
-                    "label": "Fractional General Counsel Solutions",
-                    "href": "/fractional-general-counsel"
-                }
+                    "label": "Contract Solutions ",
+                    "href": "/contract-as-a-service"
+                },
             ]
         },
         {
@@ -63,42 +63,42 @@ const siteData = {
                     "href": "/practice"
                 },
                 {
-                    "label": "Legal Design & Thinking",
+                    "label": "Legal Design and Transformation",
                     "href": "/legal-design-transformation"
                 },
                 {
-                    "label": "Contract As A Service (CAAS)",
+                    "label": "Contract Solutions",
                     "href": "/contract-as-a-service"
                 },
                 {
-                    "label": "Fractional General Counsel Solutions",
+                    "label": "Fractional General Counsel",
                     "href": "/fractional-general-counsel"
-                },
+                }
             ]
         },
         "social": {
             "title": "Social",
             "links": [
                 {
-                    "label": "GitHub",
-                    "href": "https://github.com",
-                    "icon": "/assets/icons/git.svg"
+                    "label": "Facebook",
+                    "href": "https://www.facebook.com/p/Team-Counsel-100090291305926/",
+                    "icon": "/assets/icons/fb.svg"
                 },
                 {
                     "label": "LinkedIn",
-                    "href": "https://linkedin.com",
+                    "href": "https://www.linkedin.com/company/team-counsel/",
                     "icon": "/assets/icons/in.svg"
                 },
                 {
                     "label": "Twitter",
-                    "href": "https://twitter.com",
+                    "href": "https://x.com/team_counsel",
                     "icon": "/assets/icons/twit.svg"
                 },
-                {
-                    "label": "Instagram",
-                    "href": "https://instagram.com",
-                    "icon": "/assets/icons/inst.svg"
-                }
+                // {
+                //     "label": "Instagram",
+                //     "href": "https://www.instagram.com/team_counsel?igsh=MWgzNWFjNzBybmp6MA==",
+                //     "icon": "/assets/icons/inst.svg"
+                // }
             ]
         },
         "copyright": {
@@ -151,7 +151,7 @@ const siteData = {
                 {
                     "src": "/assets/logos/logo7.svg",
                     "alt": "Logo 7"
-                },
+                }
             ],
             "buttonLabel": "Book My Strategy Call"
         },
@@ -180,8 +180,8 @@ const siteData = {
         },
         "uspSection": {
             "header": {
-                "simple": "How We Make Legal",
-                "italic": "Work for You"
+                "simple": "The Fix We Bring",
+                "italic": ""
             },
             "description": "From fundraising docs to cross-border compliance, we keep you investor-ready and deal-ready. Legal that moves at the speed of your big idea.",
             "points": [
@@ -231,20 +231,20 @@ const siteData = {
             "cards": [
                 {
                     "image": "/assets/solution1.png",
-                    "label": "Legal Design & Transformation",
+                    "label": "Legal Design and Transformation",
                     "description": "Investor-ready, compliance-ready, customer-ready frameworks so you never get caught off-guard.",
                     "link": "/legal-design-transformation",
                     "own": true
                 },
                 {
-                    "image": "/assets/solution2.png",
+                    "image": "/assets/solution3.png",
                     "label": "Fractional General Counsel",
                     "description": "Your plug-and-play legal partner — strategy + day-to-day queries without the $200K price tag.",
                     "link": "/fractional-general-counsel",
                     "own": true
                 },
                 {
-                    "image": "/assets/solution3.png",
+                    "image": "/assets/solution2.png",
                     "label": "Contract Solutions",
                     "description": "Contracts that don’t kill deals. Standardized, fast, and startup-native.",
                     "link": "/contract-as-a-service",
@@ -283,21 +283,7 @@ const siteData = {
             },
             "blogs": [
                 {
-                    "description": "Collaborating with Team Counsel has been a seamless experience. Their professionalism, attention to detail, and commitment to excellence in CLM and legal-tech align perfectly with our standards at HighLevel. Their understanding of CaaS dynamics along with strong legal thinking and a focus on legal design, has added measurable value to our operations, and they consistently deliver high-quality legal support that meets our evolving needs.",
-                    "authorImage": "/assets/authors/author3.jpeg",
-                    "authorName": "Betsy (Haverkost) Cantrell,",
-                    "authorTitle": "Vice President Legal, HighLevel",
-                    "color": "grayish"
-                },
-                {
-                    "description": "Team Counsel really got what we were trying to build at HighLevel, fast-paced, global, and ever-evolving. They matched our speed, brought structure to our processes, and gave us clarity when we needed it most. Their support has been a real strategic advantage.",
-                    "authorImage": "/assets/authors/author4.jpeg",
-                    "authorName": "Varun Vairavan,",
-                    "authorTitle": "Co-Founder, HighLevel",
-                    "color": "grayish"
-                },
-                {
-                    "description": "Navigating cross-border legal processes can be challenging, but working with Team Counsel made things straightforward and clear. Their incorporation checklist was thorough, and the team’s quick, consistent responses helped move things along smoothly. Their grasp of international business law and practical approach really helped. They bridge the gap between global vision and local action with ease.",
+                    "description": "Team Counsel has been instrumental in helping us navigate key legal challenges as we built Ballers. From CaaS implementation to handling legal notices, their proactive approach and deep understanding of our unique challenges have provided us with the confidence to keep moving forward. Their support feels less like a service and more like a partnership.",
                     "authorImage": "/assets/authors/author8.jpeg",
                     "authorName": "Krishna (Vasanth) Namasivayam,",
                     "authorTitle": "Founder, Featurely AI",
@@ -337,16 +323,16 @@ const siteData = {
                     "authorName": "K Vaideesh Subbaraj,",
                     "authorTitle": "Founder, AlphaFem",
                     "color": "grayish"
-                },
+                }
 
             ]
         },
         "strategyCallSection": {
             "header": {
-                "simple": "Complete Legal solutions for",
-                "italic": " Emerging Companies"
+                "simple": "End-to-end legal for",
+                "italic": " founders who move fast."
             },
-            "description": "We do the heavy lifting in handling legal complexities, compliances, privacy, governance, and scale.",
+            "description": "We do the heavy lifting in handling legal complexities, compliances, privacy, governance, and  scale.",
             "buttonLabel": "Book My Strategy Call"
         },
         "faqSection": {
@@ -364,7 +350,7 @@ const siteData = {
                 {
                     "id": 2,
                     "question": "What are your pricing models?",
-                    "answer": "Our services are tailored to be cost-effective for early-stage startups. We offer scalable legal solutions based on your startup’s growth stage and specific needs, with no surprise fees."
+                    "answer": "Our services are tailored to be cost-effective for early-stage startups. We offer scalable legal solutions based on your startup's growth stage and specific needs, with no surprise fees."
                 },
                 {
                     "id": 3,
@@ -396,7 +382,7 @@ const siteData = {
             },
             "cards": [
                 {
-                    "image": "/assets/icons/corporate.svg",
+                    "image": "/assets/icons/startup.svg",
                     "label": "For Corporates",
                     "description": "Corporate Structuring, Entry, Growth & Exit Strategies. We help founders build solid foundations and scale with confidence — from Day 1 to IPO.",
                     "solutions": [
@@ -411,7 +397,7 @@ const siteData = {
                     "buttonLabel": "Secure Your Deal Today"
                 },
                 {
-                    "image": "/assets/icons/startup.svg",
+                    "image": "/assets/icons/fund.svg",
                     "label": "For Startups",
                     "description": "Every deal is make-or-break. We ensure your fundraising, acquisitions, and partnerships don’t stall growth.",
                     "solutions": [
@@ -427,7 +413,7 @@ const siteData = {
                     "buttonLabel": "Secure Your Deal Today"
                 },
                 {
-                    "image": "/assets/icons/fund.svg",
+                    "image": "/assets/icons/corporate.svg",
                     "label": "For Investors & Funds",
                     "description": "Driving Impactful Investments with Tailored Legal Support From fund formation to portfolio management, we keep your capital secure and your deals clean.",
                     "solutions": [
@@ -444,14 +430,14 @@ const siteData = {
         },
         "cardSection": {
             "header": {
-                "simple": "Startup-First",
-                "italic": " Legal Solutions"
+                "simple": "Take your First Step Towards Growth",
+                "italic": "With Our Legal Solutions"
             },
             "description": "Whether you’re raising, scaling, or crossing borders — we cover the stuff that keeps founders up at night.",
             "cards": [
                 {
                     "image": "/assets/solution1.png",
-                    "label": "Legal Design & Transformation",
+                    "label": "Legal Design and Transformation",
                     "description": "Investor-ready, compliance-ready, customer-ready frameworks so you never get caught off-guard.",
                     "link": "/legal-design-transformation",
                     "own": true
@@ -580,7 +566,7 @@ const siteData = {
     },
     "legalDesignAndTransformationPage": {
         "hero": {
-            "label": "Legal Design & Transformation",
+            "label": "Legal Design and Transformation",
             "header": {
                 "simple": "Smart legal design that keeps pace with",
                 "italic": " your Business growth."
@@ -629,8 +615,8 @@ const siteData = {
         },
         "processAccordionSection": {
             "header": {
-                "simple": "How We Simplify",
-                "italic": " Contract Management "
+                "simple": "Your Legal Design & Transformation",
+                "italic": " Journey with Team Counsel"
             },
             "description": "From incorporation to fundraising, contracts to compliance — we’re the legal partner founders trust when every move matters.",
             "processes": [
@@ -661,7 +647,7 @@ const siteData = {
                 }
             ],
             "buttonLabel": "Book My Strategy Call",
-            "image": "/assets/process1.png"
+            "image": "/assets/process2.png"
         },
         "blogCardSection": {
             "header": {
@@ -669,20 +655,20 @@ const siteData = {
                 "italic": " Saying About Team Counsel"
             },
             "blogs": [
-                {
-                    "description": "Collaborating with Team Counsel has been a seamless experience. Their professionalism, attention to detail, and commitment to excellence in CLM and legal-tech align perfectly with our standards at HighLevel. Their understanding of CaaS dynamics along with strong legal thinking and a focus on legal design, has added measurable value to our operations, and they consistently deliver high-quality legal support that meets our evolving needs.",
-                    "authorImage": "/assets/authors/author3.jpeg",
-                    "authorName": "Betsy (Haverkost) Cantrell,",
-                    "authorTitle": "Vice President Legal, HighLevel",
-                    "color": "grayish"
-                },
-                {
-                    "description": "Team Counsel really got what we were trying to build at HighLevel, fast-paced, global, and ever-evolving. They matched our speed, brought structure to our processes, and gave us clarity when we needed it most. Their support has been a real strategic advantage.",
-                    "authorImage": "/assets/authors/author4.jpeg",
-                    "authorName": "Varun Vairavan,",
-                    "authorTitle": "Co-Founder, HighLevel",
-                    "color": "grayish"
-                },
+                // {
+                //     "description": "Collaborating with Team Counsel has been a seamless experience. Their professionalism, attention to detail, and commitment to excellence in CLM and legal-tech align perfectly with our standards at HighLevel. Their understanding of CaaS dynamics along with strong legal thinking and a focus on legal design, has added measurable value to our operations, and they consistently deliver high-quality legal support that meets our evolving needs.",
+                //     "authorImage": "/assets/authors/author3.jpeg",
+                //     "authorName": "Betsy (Haverkost) Cantrell,",
+                //     "authorTitle": "Vice President Legal, HighLevel",
+                //     "color": "grayish"
+                // },
+                // {
+                //     "description": "Team Counsel really got what we were trying to build at HighLevel, fast-paced, global, and ever-evolving. They matched our speed, brought structure to our processes, and gave us clarity when we needed it most. Their support has been a real strategic advantage.",
+                //     "authorImage": "/assets/authors/author4.jpeg",
+                //     "authorName": "Varun Vairavan,",
+                //     "authorTitle": "Co-Founder, HighLevel",
+                //     "color": "grayish"
+                // },
                 {
                     "description": "Navigating cross-border legal processes can be challenging, but working with Team Counsel made things straightforward and clear. Their incorporation checklist was thorough, and the team’s quick, consistent responses helped move things along smoothly. Their grasp of international business law and practical approach really helped. They bridge the gap between global vision and local action with ease.",
                     "authorImage": "/assets/authors/author8.jpeg",
@@ -769,7 +755,7 @@ const siteData = {
     },
     "caasPage": {
         "hero": {
-            "label": "Contract as a Service",
+            "label": "Contract Solutions",
             "header": {
                 "simple": "Your Startup’s Legal Team.",
                 "italic": "Without the Full-Time Cost."
@@ -840,7 +826,7 @@ const siteData = {
                 },
             ],
             "buttonLabel": "Book My Strategy Call",
-            "image": "/assets/process2.png"
+            "image": "/assets/process1.png"
         },
         "blogCardSection": {
             "header": {
@@ -848,20 +834,20 @@ const siteData = {
                 "italic": " Saying About Team Counsel"
             },
             "blogs": [
-                {
-                    "description": "Collaborating with Team Counsel has been a seamless experience. Their professionalism, attention to detail, and commitment to excellence in CLM and legal-tech align perfectly with our standards at HighLevel. Their understanding of CaaS dynamics along with strong legal thinking and a focus on legal design, has added measurable value to our operations, and they consistently deliver high-quality legal support that meets our evolving needs.",
-                    "authorImage": "/assets/authors/author3.jpeg",
-                    "authorName": "Betsy (Haverkost) Cantrell,",
-                    "authorTitle": "Vice President Legal, HighLevel",
-                    "color": "grayish"
-                },
-                {
-                    "description": "Team Counsel really got what we were trying to build at HighLevel, fast-paced, global, and ever-evolving. They matched our speed, brought structure to our processes, and gave us clarity when we needed it most. Their support has been a real strategic advantage.",
-                    "authorImage": "/assets/authors/author4.jpeg",
-                    "authorName": "Varun Vairavan,",
-                    "authorTitle": "Co-Founder, HighLevel",
-                    "color": "grayish"
-                },
+                // {
+                //     "description": "Collaborating with Team Counsel has been a seamless experience. Their professionalism, attention to detail, and commitment to excellence in CLM and legal-tech align perfectly with our standards at HighLevel. Their understanding of CaaS dynamics along with strong legal thinking and a focus on legal design, has added measurable value to our operations, and they consistently deliver high-quality legal support that meets our evolving needs.",
+                //     "authorImage": "/assets/authors/author3.jpeg",
+                //     "authorName": "Betsy (Haverkost) Cantrell,",
+                //     "authorTitle": "Vice President Legal, HighLevel",
+                //     "color": "grayish"
+                // },
+                // {
+                //     "description": "Team Counsel really got what we were trying to build at HighLevel, fast-paced, global, and ever-evolving. They matched our speed, brought structure to our processes, and gave us clarity when we needed it most. Their support has been a real strategic advantage.",
+                //     "authorImage": "/assets/authors/author4.jpeg",
+                //     "authorName": "Varun Vairavan,",
+                //     "authorTitle": "Co-Founder, HighLevel",
+                //     "color": "grayish"
+                // },
                 {
                     "description": "Navigating cross-border legal processes can be challenging, but working with Team Counsel made things straightforward and clear. Their incorporation checklist was thorough, and the team’s quick, consistent responses helped move things along smoothly. Their grasp of international business law and practical approach really helped. They bridge the gap between global vision and local action with ease.",
                     "authorImage": "/assets/authors/author8.jpeg",
@@ -909,9 +895,9 @@ const siteData = {
         },
         "legalExpertiseSection": {
             "header": {
-                "simple": "From incorporation to M&A,",
-                "italic": " we handle every legal curveball",
-                "againSimple": "while you focus on scaling."
+                "simple": "Close deals faster. Stay compliant.",
+                "italic": " Let contracts work for your growth, not against it",
+                "againSimple": ""
             },
             "description": "Scale faster with legal partners who think like founders.",
             "buttonLabel": "Get Legal Expertise Now"
@@ -951,8 +937,8 @@ const siteData = {
         "hero": {
             "label": "Fractional General Counsel",
             "header": {
-                "simple": "Your Startup’s Legal Team. Without the Full-Time Cost.",
-                "italic": " Start Closing Faster."
+                "simple": "Your Startup’s Legal Team — Without the Full-Time Cost.",
+                "italic": " Built to Close Faster."
             },
             "description": "We take contracts off your plate—from drafting to negotiation to renewals—so you can focus on growth. Founder-friendly, investor-ready, always on time.",
             "buttonLabel": "Get My Fractional GC"
@@ -998,8 +984,8 @@ const siteData = {
         },
         "processAccordionSection": {
             "header": {
-                "simple": "How We Simplify",
-                "italic": " Contract Management "
+                "simple": "Your Legal Team,",
+                "italic": "Whenever and Wherever You Need"
             },
             "description": "From incorporation to fundraising, contracts to compliance — we’re the legal partner founders trust when every move matters.",
             "processes": [
@@ -1038,20 +1024,6 @@ const siteData = {
                 "italic": " Saying About Team Counsel"
             },
             "blogs": [
-                {
-                    "description": "Collaborating with Team Counsel has been a seamless experience. Their professionalism, attention to detail, and commitment to excellence in CLM and legal-tech align perfectly with our standards at HighLevel. Their understanding of CaaS dynamics along with strong legal thinking and a focus on legal design, has added measurable value to our operations, and they consistently deliver high-quality legal support that meets our evolving needs.",
-                    "authorImage": "/assets/authors/author3.jpeg",
-                    "authorName": "Betsy (Haverkost) Cantrell,",
-                    "authorTitle": "Vice President Legal, HighLevel",
-                    "color": "grayish"
-                },
-                {
-                    "description": "Team Counsel really got what we were trying to build at HighLevel, fast-paced, global, and ever-evolving. They matched our speed, brought structure to our processes, and gave us clarity when we needed it most. Their support has been a real strategic advantage.",
-                    "authorImage": "/assets/authors/author4.jpeg",
-                    "authorName": "Varun Vairavan,",
-                    "authorTitle": "Co-Founder, HighLevel",
-                    "color": "grayish"
-                },
                 {
                     "description": "Navigating cross-border legal processes can be challenging, but working with Team Counsel made things straightforward and clear. Their incorporation checklist was thorough, and the team’s quick, consistent responses helped move things along smoothly. Their grasp of international business law and practical approach really helped. They bridge the gap between global vision and local action with ease.",
                     "authorImage": "/assets/authors/author8.jpeg",
@@ -1099,9 +1071,9 @@ const siteData = {
         },
         "legalExpertiseSection": {
             "header": {
-                "simple": "From incorporation to M&A,",
-                "italic": " we handle every legal curveball",
-                "againSimple": "while you focus on scaling."
+                "simple": "End-to-end legal for",
+                "italic": " founders who move fast.",
+                "againSimple": ""
             },
             "description": "Scale faster with legal partners who think like founders.",
             "buttonLabel": "Get Legal Expertise Now"
@@ -1204,7 +1176,7 @@ const siteData = {
                 "simple": "Why Founders?",
                 "italic": " Trust Us"
             },
-            "description": "Because we’ve been where you are: buried in legal paperwork when you should be focused on building. Because investors know clean structures and strong compliance reduce risks. Because we don’t just advise—we fix problems before they stall your growth.",
+            "description": "Because we've been where you are: buried in legal paperwork when you should be focused on building.Because investors know clean structures and strong compliance reduce risks. Because we don't just advise—we fix problems before they stall your growth.",
             "buttonLabel": "Book My Strategy Call"
         },
         "tagCardSection": {
@@ -1230,38 +1202,37 @@ const siteData = {
                     "value": ""
                 }
             ]
-            
-        },
-        "faqSection": {
-            "header": {
-                "simple": "Your questions",
-                "italic": " answered"
-            },
-            "description": "Still have questions? Here are some of our most frequently asked questions.",
-            "faqs": [
-                {
-                    "id": 1,
-                    "question": "What makes Team Counsel different from traditional law firms?",
-                    "answer": "We focus exclusively on startups and high-growth companies, providing flexible legal solutions that move at your speed."
+        }, 
+            "faqSection": {
+                "header": {
+                    "simple": "Your questions",
+                    "italic": " answered"
                 },
-                {
-                    "id": 2,
-                    "question": "What are your pricing models?",
-                    "answer": "Our services are tailored to be cost-effective for early-stage startups. We offer scalable legal solutions based on your startup’s growth stage and specific needs, with no surprise fees."
-                },
-                {
-                    "id": 3,
-                    "question": "How do I know if this is right for me?",
-                    "answer": "We offer a free legal audit to assess your startup's unique needs and recommend solutions that match your growth stage and objectives."
-                },
-                {
-                    "id": 4,
-                    "question": "Which industries do you specialize in?",
-                    "answer": "We specialize in providing legal support for startups and funds across various industries, including tech, SaaS, health and wellness, and impact-driven ventures."
-                }
-            ]
-        }
-    
+                "description": "Still have questions? Here are some of our most frequently asked questions.",
+                "faqs": [
+                    {
+                        "id": 1,
+                        "question": "What makes Team Counsel different from traditional law firms?",
+                        "answer": "We focus exclusively on startups and high-growth companies, providing flexible legal solutions that move at your speed."
+                    },
+                    {
+                        "id": 2,
+                        "question": "What are your pricing models?",
+                        "answer": "Our services are tailored to be cost-effective for early-stage startups. We offer scalable legal solutions based on your startup’s growth stage and specific needs, with no surprise fees."
+                    },
+                    {
+                        "id": 3,
+                        "question": "How do I know if this is right for me?",
+                        "answer": "We offer a free legal audit to assess your startup's unique needs and recommend solutions that match your growth stage and objectives."
+                    },
+                    {
+                        "id": 4,
+                        "question": "Which industries do you specialize in?",
+                        "answer": "We specialize in providing legal support for startups and funds across various industries, including tech, SaaS, health and wellness, and impact-driven ventures."
+                    }
+                ]
+            }
     }
-}
+};
+
 export default siteData;
