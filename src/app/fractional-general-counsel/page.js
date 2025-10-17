@@ -15,7 +15,7 @@ const faqSection = siteData?.fractionalGcPage?.faqSection;
 
 export default function FGCSolutionsPage() {
     return (
-        <main className="space-y-12 bg-brand-gray">
+        <main className=" bg-brand-gray">
             <SubHeroSection
                 label={hero?.label}
                 header={hero?.header}
@@ -34,10 +34,10 @@ export default function FGCSolutionsPage() {
                 buttonLabel={processAccordion?.buttonLabel}
                 image={processAccordion?.image}
             />
-            <BlogCardSection
+            {/* <BlogCardSection
                 header={blogCardSection?.header}
                 blogs={blogCardSection?.blogs}
-            />
+            /> */}
             <StrategyCall
                 header={legalExpertise?.header}
                 description={legalExpertise?.description}

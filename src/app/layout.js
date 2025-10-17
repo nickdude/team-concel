@@ -1,9 +1,6 @@
-"use client";
-import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Onest, Bricolage_Grotesque, Space_Grotesk, PT_Serif } from "next/font/google";
-import Footer from "@/components/Footer";
-import { usePathname } from "next/navigation";
+import ClientLayout from "@/components/ClientLayout";
 
 const onest = Onest({
   subsets: ["latin"],
@@ -26,24 +23,48 @@ const ptSerif = PT_Serif({
   variable: "--font-ptserif",
 });
 
-// export const metadata = {
-//   title: "My App",
-//   description: "Next.js + Tailwind + Fonts + Colors",
-// };
+export const metadata = {
+  title: "Team Counsel — Startup-first legal",
+  description:
+    "BigLaw-quality legal services for early-stage startups and investors — without the BigLaw price tag.",
+  metadataBase: new URL("https://teamcounsel.in"),
+  openGraph: {
+    title: "Team Counsel",
+    description:
+      "Startup-first legal solutions — fractional GC, contract solutions, and legal design.",
+    url: "https://teamcounsel.in",
+    siteName: "Team Counsel",
+    images: [
+      {
+        url: "/assets/logo.svg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Team Counsel",
+    description:
+      "Startup-first legal solutions — fractional GC, contract solutions, and legal design.",
+    images: ["/assets/logo.svg"],
+  },
+  icons: {
+    icon: "/assets/favicon.png",
+    shortcut: "/assets/favicon.png",
+    apple: "/assets/favicon.png",
+  },
+};
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
-  const isAdminPage = pathname.startsWith("/admin");
-
   return (
     <html
       lang="en"
       className={`${onest.variable} ${bricolage.variable} ${spaceGrotesk.variable} ${ptSerif.variable}`}
     >
       <body className="font-onest bg-brand-white text-brand-navy">
-        {!isAdminPage && <Navbar />}
-        <main className="min-h-screen">{children}</main>
-        {!isAdminPage && <Footer />}
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

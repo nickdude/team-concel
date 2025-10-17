@@ -73,10 +73,10 @@ export default function Home() {
         steps={processSection?.steps}
         image={processSection?.image}
       />
-      <BlogCardSection
+      {/* <BlogCardSection
         header={blogSection?.header}
         blogs={blogSection?.blogs}
-      />
+      /> */}
       <StrategyCall
         header={strategyCall?.header}
         description={strategyCall?.description}

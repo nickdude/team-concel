@@ -51,7 +51,7 @@ export default function ProcessSection({ header, steps, image }) {
                 </div>
             </div>
 
-            <Hr />
+            {/* <Hr /> */}
         </section>
     );
 }
