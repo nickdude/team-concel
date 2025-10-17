@@ -24,7 +24,7 @@ const ptSerif = PT_Serif({
 });
 
 export const metadata = {
-  title: "Team Counsel — Startup-first legal",
+  title: "Team Counsel",
   description:
     "BigLaw-quality legal services for early-stage startups and investors — without the BigLaw price tag.",
   metadataBase: new URL("https://teamcounsel.in"),
