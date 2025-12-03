@@ -1129,37 +1129,100 @@ const siteData = {
                 "Empower angel investors and VCs to back startups with clean, reliable structures.",
                 "Bridge the gap between legal and business so compliance never kills growth."
             ],
-            "image": "/assets/bio.svg",
+            "uspImage": {
+                "src": "/assets/about-us-usp.svg",
+                "alt": "USP Image"
+            },
             "buttonLabel": "Book My Strategy Call"
         },
-        "cardSection": {
+        "tagCardSection": {
             "header": {
-                "simple": "What Makes Us ",
+                "simple": "What Makes Us",
                 "italic": " Different?"
             },
             "description": "Most firms sell billable hours. We deliver outcomes.",
-            "cards": [
+            "tags": [
                 {
+                    "icon": "/assets/icons/fund.svg",
                     "label": "Startup-Native",
-                    "description": "We know the founder grind, and our frameworks are designed to keep pace with your hustle.",
-                    "image": "/assets/solution1.png"
+                    "value": "We move at founder speed, not law firm pace."
                 },
                 {
+                    "icon": "/assets/icons/handshake.svg",
                     "label": "Lifecycle Support",
-                    "description": "From incorporation to exit, we’re with you at every stage.",
-                    "image": "/assets/solution2.png"
+                    "value": "From idea to exit, we’ve got your back."
                 },
                 {
+                    "icon": "/assets/icons/signature.svg",
                     "label": "Legal Design First",
-                    "description": "Clean, practical, and scalable legal structures that align with business goals.",
-                    "image": "/assets/solution3.png"
-                },
-                {
-                    "label": "Affordable Access",
-                    "description": "Fractional support, contracts-as-a-service, and scalable models. Legal firepower without burning runway.",
-                    "image": "/assets/solution1.png"
+                    "value": "Scalable frameworks, not 50-page PDFs."
                 }
             ]
+        },
+        "ourImpactSection": {
+            "header": {
+                "simple": "Our",
+                "italic": " Impact"
+            },
+            "description": "",
+        },
+        "ourJourneySection": {
+            "header": {
+                "simple": "Our",
+                "italic": " Journey"
+            },
+            "description": "From early ideas to global ambition, we’ve grown alongside the founders we serve.",
+        },
+        "teamSection": {
+            "header": {
+                "simple": "Meet the",
+                "italic": " Team"
+            },
+            "description": "Specialists in startup law, united by a mission to empower builders.",
+            "cards": [
+                {
+                    "image": "/assets/teams/team1.png",
+                    "label": "John Mathew",
+                    "description": "Founder & Lead Counsel"
+                },
+                {
+                    "image": "/assets/teams/team2.png",
+                    "label": "Aruna Bopche",
+                    "description": "Associate, U.S. Practice"
+                },
+                {
+                    "image": "/assets/teams/team3.png",
+                    "label": "Gayatri Singh",
+                    "description": "Associate, India Practice"
+                },
+                {
+                    "image": "/assets/teams/team4.png",
+                    "label": "Annshika Bakshi",
+                    "description": "Policy & Research"
+                },
+                {
+                    "image": "/assets/teams/team5.png",
+                    "label": "Ananya Saxena",
+                    "description": "Trainee Associate"
+                },
+            ]
+        },
+        "ourFounderSection": {
+            "header": {
+                "simple": "Why founders",
+                "italic": " Trust Us?"
+            },
+            "description": "Ready to scale without legal bottlenecks?",
+            "points": [
+                "We’ve been where you are — buried in paperwork when you should be building.",
+                "Investors trust our clean structures and compliant frameworks.",
+                "We don’t just advise; we fix, simplify, and move things forward."
+            ],
+            "uspImage": {
+                "src": "/assets/about-us-usp.svg",
+                "alt": "USP Image"
+            },
+            "buttonLabel": "Book My Strategy Call"
         },
         "bioSection": {
             "header": {
@@ -1173,65 +1236,41 @@ const siteData = {
         },
         "strategyCallSection": {
             "header": {
-                "simple": "Why Founders?",
-                "italic": " Trust Us"
+                "simple": "End-to-end legal for",
+                "italic": " founders who move fast."
             },
-            "description": "Because we've been where you are: buried in legal paperwork when you should be focused on building.Because investors know clean structures and strong compliance reduce risks. Because we don't just advise—we fix problems before they stall your growth.",
+            "description": "Scale faster with legal partners who think like founders.",
             "buttonLabel": "Book My Strategy Call"
         },
-        "tagCardSection": {
+        "faqSection": {
             "header": {
-                "simple": "Our",
-                "italic": " Impact"
+                "simple": "Your questions",
+                "italic": " answered"
             },
-            "description": "",
-            "tags": [
+            "description": "Still have questions? Here are some of our most frequently asked questions.",
+            "faqs": [
                 {
-                    "icon": "/assets/icons/speed.svg",
-                    "label": "Empowering early-stage startups and investors across Five countries. US.",
-                    "value": ""
+                    "id": 1,
+                    "question": "What makes Team Counsel different from traditional law firms?",
+                    "answer": "We focus exclusively on startups and high-growth companies, providing flexible legal solutions that move at your speed."
                 },
                 {
-                    "icon": "/assets/icons/handshake.svg",
-                    "label": "Supporting Seed to Series A founders with practical, startup-speed legal",
-                    "value": ""
+                    "id": 2,
+                    "question": "What are your pricing models?",
+                    "answer": "Our services are tailored to be cost-effective for early-stage startups. We offer scalable legal solutions based on your startup’s growth stage and specific needs, with no surprise fees."
                 },
                 {
-                    "icon": "/assets/icons/finance.svg",
-                    "label": "Helping founders raise confidently, scale globally, and exit cleanly.",
-                    "value": ""
+                    "id": 3,
+                    "question": "How do I know if this is right for me?",
+                    "answer": "We offer a free legal audit to assess your startup's unique needs and recommend solutions that match your growth stage and objectives."
+                },
+                {
+                    "id": 4,
+                    "question": "Which industries do you specialize in?",
+                    "answer": "We specialize in providing legal support for startups and funds across various industries, including tech, SaaS, health and wellness, and impact-driven ventures."
                 }
             ]
-        }, 
-            "faqSection": {
-                "header": {
-                    "simple": "Your questions",
-                    "italic": " answered"
-                },
-                "description": "Still have questions? Here are some of our most frequently asked questions.",
-                "faqs": [
-                    {
-                        "id": 1,
-                        "question": "What makes Team Counsel different from traditional law firms?",
-                        "answer": "We focus exclusively on startups and high-growth companies, providing flexible legal solutions that move at your speed."
-                    },
-                    {
-                        "id": 2,
-                        "question": "What are your pricing models?",
-                        "answer": "Our services are tailored to be cost-effective for early-stage startups. We offer scalable legal solutions based on your startup’s growth stage and specific needs, with no surprise fees."
-                    },
-                    {
-                        "id": 3,
-                        "question": "How do I know if this is right for me?",
-                        "answer": "We offer a free legal audit to assess your startup's unique needs and recommend solutions that match your growth stage and objectives."
-                    },
-                    {
-                        "id": 4,
-                        "question": "Which industries do you specialize in?",
-                        "answer": "We specialize in providing legal support for startups and funds across various industries, including tech, SaaS, health and wellness, and impact-driven ventures."
-                    }
-                ]
-            }
+        }
     }
 };
 

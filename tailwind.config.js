@@ -16,6 +16,8 @@ module.exports = {
         bricolage: ["var(--font-bricolage)", "sans-serif"],
         spacegrotesk: ["var(--font-spacegrotesk)", "sans-serif"],
         ptserif: ["var(--font-ptserif)", "serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
+        serif: ["var(--font-serif)", "serif"],
       },
       colors: {
         brand: {

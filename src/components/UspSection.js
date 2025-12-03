@@ -1,6 +1,7 @@
 import Button from "./Button";
 
-export default function UspSection({ header, description, points, uspImage }) {
+export default function UspSection({ header, description, points, uspImage, breakLine = true }) {
+
     return (
         <section className="py-0 sm:py-16 md:py-20 flex justify-center">
             <div className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-8 md:px-36 2xl:px-44 w-full gap-10 md:gap-20">
@@ -8,7 +9,7 @@ export default function UspSection({ header, description, points, uspImage }) {
                 {/* Left Side */}
                 <div className="w-full md:max-w-lg text-left md:text-left">
                     <h2 className="text-[2.13rem]  sm:text-3xl md:text-4xl font-onest font-semibold text-brand-navy leading-[130%] tracking-[-0.67px]" style={{ lineHeight: '1.4' }}>
-                        {header?.simple}<br /><span className="font-ptserif font-normal italic">{header?.italic}</span>
+                        {header?.simple}{breakLine ? <br /> : "  "}<span className="font-ptserif font-normal italic">{header?.italic}</span>
                     </h2>
                     <p className="text-sm sm:text-base text-brand-navyAlpha leading-6 font-onest mt-4">
                         {description}
