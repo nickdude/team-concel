@@ -1,16 +1,49 @@
 export default function TeamCard({ image, label, description }) {
     return (
-        <div className="w-full h-[487px] bg-white rounded-2xl">
-            <div className="w-full rounded-t-2xl">
-                <img src={image} alt="Team Member" />
-            </div>
-            <div>
-                <div className="flex w-full items-center justify-between">
-                    <h2 className="text-lg font-semibold font-inter text-navy leading-[34px] mt-4 px-4">{label}</h2>
-                    <img src="/assets/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6 mt-2 mx-4" />
+        <div className="relative w-full bg-white rounded-2xl overflow-hidden group cursor-pointer">
+
+            {/* IMAGE FIXED HEIGHT */}
+            <div className="relative w-full h-[300px] overflow-hidden">
+                <img
+                    src={image}
+                    alt="Team Member"
+                    className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
+                />
+
+                {/* Hover text overlay only on image */}
+                <div className="absolute inset-0 bg-black/50 backdrop-blur-md text-white p-6 opacity-0 transition-all duration-300 group-hover:opacity-100 flex items-center z-10">
+                    <p className="text-sm font-inter leading-6">
+                        11+ years in M&A, PE, and VC law. Ex-Alpha Wave Global, AZB, and Trilegal.
+                        Closed 80+ deals worth $20Bn+ across 7 countries. Now helping founders
+                        raise faster, scale smarter, and stay compliant – minus the legal fluff.
+
+                        <br /><br />
+                        <span className="font-bold">Fun fact:</span> If you're fundraising, he’s probably helped someone just like you.
+                    </p>
                 </div>
-                <p className="font-ptserif text-sm text-navy italic font-normal leading-6 mt-1 px-4">{description}</p>
+            </div>
+
+            {/* STATIC INFO AREA */}
+            <div className="relative z-20 p-4 bg-white">
+                <div className="flex justify-between items-center">
+                    <h2 className="text-lg font-semibold font-inter text-navy leading-[34px]">
+                        {label}
+                    </h2>
+
+                    {/* Make LinkedIn Icon Above Overlay */}
+                    <img
+                        src="/assets/icons/linkedin.svg"
+                        alt="LinkedIn"
+                        className="w-6 h-6 hover:opacity-80 transition cursor-pointer z-30"
+                    />
+                </div>
+
+                <p className="font-ptserif text-sm text-navy italic mt-1 leading-6">
+                    {description}
+                </p>
             </div>
         </div>
     );
-}   
+}
+
+

@@ -14,6 +14,27 @@
   /* Firefox */
 }
 
+/* hide scrollbars nicely */
+.years-track::-webkit-scrollbar,
+.cards-track::-webkit-scrollbar {
+  display: none;
+}
+
+.years-track,
+.cards-track {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* optional small responsive tweaks */
+@media (max-width: 768px) {
+  .cards-track>div[ref] {
+    width: 320px !important;
+    height: 380px !important;
+  }
+}
+
+
 @keyframes scrollX {
   0% {
     transform: translateX(0);

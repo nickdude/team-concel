@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Hr from "./Hr";
 
 export default function UspSection({ header, description, points, uspImage, breakLine = true }) {
 
@@ -19,7 +20,7 @@ export default function UspSection({ header, description, points, uspImage, brea
                         {points.map((point, idx) => (
                             <div key={idx} className="flex items-left space-x-3 sm:space-x-4 justify-start">
                                 <img src="/assets/icons/check.svg" alt="check" className="w-4 h-4" />
-                                <p className="text-sm sm:text-base text-brand-navy font-onest leading-[27px] m-0">{point}</p>
+                                <p className="text-sm sm:text-base font-normal text-brand-navy font-onest leading-[27px] m-0">{point}</p>
                             </div>
                         ))}
                     </div>

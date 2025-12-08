@@ -3,6 +3,7 @@ import BlogCardSection from "@/components/BlogCardSection";
 import CardSection from "@/components/CardSection";
 import FaqSection from "@/components/FaqSection";
 import HeroSection from "@/components/HeroSection";
+import Hr from "@/components/Hr";
 import MiniCard from "@/components/MiniCard";
 import MiniCardSection from "@/components/MiniCardSection";
 import OurImpactSection from "@/components/OurImpactSection";
@@ -15,6 +16,8 @@ import TagCardSection from "@/components/TagCardSection";
 import TeamCardSection from "@/components/TeamCardSection";
 import UspSection from "@/components/UspSection";
 import siteData from "@/data/siteData";
+import TimelineScroll from "@/components/TimelineScroll";
+import OurHistorySection from "@/components/OurHistorySection";
 
 const hero = siteData?.aboutUsPage?.hero;
 const ourMission = siteData?.aboutUsPage?.ourMissionSection;
@@ -27,12 +30,12 @@ const faqSection = siteData?.aboutUsPage?.faqSection;
 const teamSection = siteData?.aboutUsPage?.teamSection;
 const ourImpactSection = siteData?.aboutUsPage?.ourImpactSection;
 const ourJourneySection = siteData?.aboutUsPage?.ourJourneySection;
+const ourHistorySection = siteData?.aboutUsPage?.ourHistorySection;
 
 export default function AboutUsPage() {
 
     return (
         <main className=" bg-brand-gray">
-
             <SubHeroSection
                 label={hero?.label}
                 header={hero?.header}
@@ -47,27 +50,28 @@ export default function AboutUsPage() {
                 uspImage={ourMission?.uspImage}
                 breakLine={false}
             />
-
+            <Hr />
             <TagCardSection
                 header={tagCardSection?.header}
                 description={tagCardSection?.description}
                 tags={tagCardSection?.tags}
             />
-
+            <Hr />
             <OurImpactSection
                 header={ourImpactSection?.header}
                 description={ourImpactSection?.description}
             />
-            <OurJourneySection
-                header={ourJourneySection?.header}
-                description={ourJourneySection?.description}
+            <Hr />
+            <OurHistorySection
+                header={ourHistorySection?.header}
+                description={ourHistorySection?.description}
             />
-
             <TeamCardSection
                 header={teamSection?.header}
                 description={teamSection?.description}
                 cards={teamSection?.cards}
             />
+            <Hr />
             <UspSection
                 header={ourFounderSection?.header}
                 description={ourFounderSection?.description}

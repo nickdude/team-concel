@@ -1166,7 +1166,7 @@ const siteData = {
             },
             "description": "",
         },
-        "ourJourneySection": {
+        "ourHistorySection": {
             "header": {
                 "simple": "Our",
                 "italic": " Journey"

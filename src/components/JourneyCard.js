@@ -1,13 +1,17 @@
-export default function JourneyCard({ image, title, description, className, active }) {
+export default function JourneyCard({ image, title, description, className, active, visible }) {
     return (
-        <div
-            className={`bg-white rounded-3xl overflow-hidden w-[380px] transition-all duration-300 ${active
-                ? "shadow-[0_14px_40px_rgba(0,0,0,0.12)] border-t-4 border-[#1E3A5F]"
-                : "shadow-[0_8px_20px_rgba(0,0,0,0.05)] opacity-70"
-                }`}
-        >
+        <div className={`relative`}>
+            {/* pointer/connector above active card */}
+            {active && (
+                <div className="absolute left-1/2 -translate-x-1/2 -top-6 flex flex-col items-center">
+                    <div className="w-1 h-6 bg-[#1E3A5F] rounded" />
+                    <div className="w-3 h-3 bg-[#1E3A5F] rounded-full mt-1" />
+                </div>
+            )}
+
             <div
-                className={`bg-white rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.06)] overflow-hidden w-[380px] ${className}`}
+                className={`bg-white rounded-3xl overflow-hidden w-[360px] transition-all duration-700 ease-out transform ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                    } ${active ? "shadow-[0_22px_60px_rgba(0,0,0,0.18)] scale-[1.03] border-t-4 border-[#1E3A5F]" : "shadow-[0_8px_20px_rgba(0,0,0,0.05)]"}`}
             >
                 {/* Image Section */}
                 <div className="h-[240px] w-full overflow-hidden">
@@ -26,6 +30,6 @@ export default function JourneyCard({ image, title, description, className, acti
                     </p>
                 </div>
             </div>
-        </div >
+        </div>
     );
 }

@@ -14,7 +14,7 @@ export default function SubHeroSection({ label, header, description, buttonLabel
                 </span>
             </h1>
 
-            <p className="font-onest text-white font-normal text-sm sm:text-base leading-[27px] mt-5 mb-8 w-full sm:w-4/5 md:w-[55%] text-center">
+            <p className="font-onest text-white font-normal text-sm sm:text-base leading-[27px] mt-5 mb-8 w-full sm:w-4/5 md:w-[55%] text-center opacity-80">
                 {description}
             </p>
 

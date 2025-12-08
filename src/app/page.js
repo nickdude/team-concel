@@ -37,37 +37,6 @@ export default function Home() {
 
   return (
     <main className="space-y-12 bg-brand-gray">
-      <TeamCardSection
-        header={{ simple: "Meet the", italic: " Team" }}
-        description={"Specialists in startup law, united by a mission to empower builders."}
-        cards={[
-          {
-            image: "/assets/teams/team1.png",
-            label: "John Mathew",
-            description: "Founder & Lead Counsel"
-          },
-          {
-            image: "/assets/teams/team2.png",
-            label: "Aruna Bopche",
-            description: "Associate, U.S. Practice"
-          },
-          {
-            image: "/assets/teams/team3.png",
-            label: "Gayatri Singh",
-            description: "Associate, India Practice"
-          },
-          {
-            image: "/assets/teams/team4.png",
-            label: "Annshika Bakshi",
-            description: "Policy & Research"
-          },
-          {
-            image: "/assets/teams/team5.png",
-            label: "Ananya Saxena",
-            description: "Trainee Associate"
-          },
-        ]}
-      />
 
       <HeroSection
         label={hero?.label}
