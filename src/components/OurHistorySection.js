@@ -5,10 +5,10 @@ export default function OurHistorySection({ header, description }) {
 
 
     return (
-        <section className="py-12 sm:py-16 flex flex-col justify-center px-4 sm:px-8 md:px-36 2xl:px-44">
+        <section className="py-12 sm:py-16 flex flex-col justify-center ">
 
             {/* Header */}
-            <h1 className="text-left font-onest text-[2.13rem] sm:text-3xl md:text-4xl font-semibold text-navy leading-[130%] tracking-[-0.67px]">
+            <h1 className="text-left font-onest text-[2.13rem] sm:text-3xl md:text-4xl font-semibold text-navy leading-[130%] tracking-[-0.67px] px-4 sm:px-8 md:px-36 2xl:px-44">
                 {header?.simple}{" "}
                 <span className="font-ptserif font-normal italic">
                     {header?.italic}
@@ -16,7 +16,7 @@ export default function OurHistorySection({ header, description }) {
             </h1>
 
             {/* Description */}
-            <p className="font-onest text-brand-navyAlpha font-normal text-sm sm:text-base leading-[27px] mt-3 w-full sm:w-4/5 md:w-[55%]">
+            <p className="font-onest text-brand-navyAlpha font-normal text-sm sm:text-base leading-[27px] mt-3 w-full sm:w-4/5 md:w-[55%] px-4 sm:px-8 md:px-36 2xl:px-44">
                 {description}
             </p>
 

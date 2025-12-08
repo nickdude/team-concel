@@ -119,7 +119,7 @@ export default function TimelineScroll() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
         >
-            <div className="mx-auto max-w-7xl px-4 md:px-8">
+            <div className="mx-auto w-full">
 
 
                 {/* Scrollable Years */}
