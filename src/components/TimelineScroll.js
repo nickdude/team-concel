@@ -73,40 +73,107 @@ export default function TimelineScroll() {
         return () => clearTimeout(t);
     }, []);
 
+    // programmatic-snapping guard
+    const isProgrammaticRef = useRef(false);
+
     const syncScrollToIndex = (index) => {
+        // used for clicks: programmatically center both scrollers
+        isProgrammaticRef.current = true;
         setActiveIndex(index);
+
         scrollToCenter(cardContainerRef.current, cardRefs.current[index]);
         scrollToCenter(yearContainerRef.current, yearRefs.current[index]);
+
+        // re-enable handlers after smooth scroll finishes
+        window.setTimeout(() => {
+            isProgrammaticRef.current = false;
+        }, 500);
     };
 
-    let scrollTimeout = null;
-    let raf = null;
+    // persistent refs for rAF and timeout so handlers don't recreate them each render
+    const rafRef = useRef(null);
+    const scrollTimeoutRef = useRef(null);
 
     const handleCardScroll = () => {
-        if (raf) cancelAnimationFrame(raf);
+        // ignore while we're programmatically snapping
+        if (isProgrammaticRef.current) return;
 
-        raf = requestAnimationFrame(() => {
-            if (scrollTimeout) clearTimeout(scrollTimeout);
+        if (rafRef.current) cancelAnimationFrame(rafRef.current);
 
-            scrollTimeout = setTimeout(() => {
-                const container = cardContainerRef.current;
-                const center = container.scrollLeft + container.clientWidth / 2;
+        rafRef.current = requestAnimationFrame(() => {
+            const container = cardContainerRef.current;
+            const center = container.scrollLeft + container.clientWidth / 2;
 
-                let nearest = 0;
-                let minDist = Infinity;
+            let nearest = 0;
+            let minDist = Infinity;
 
-                cardRefs.current.forEach((card, index) => {
-                    if (!card) return;
-                    const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-                    const dist = Math.abs(center - cardCenter);
-                    if (dist < minDist) {
-                        minDist = dist;
-                        nearest = index;
-                    }
+            cardRefs.current.forEach((card, index) => {
+                if (!card) return;
+                const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+                const dist = Math.abs(center - cardCenter);
+                if (dist < minDist) {
+                    minDist = dist;
+                    nearest = index;
+                }
+            });
+
+            // update active state immediately for a responsive feel
+            if (nearest !== activeIndex) {
+                setActiveIndex(nearest);
+            }
+
+            // live-sync the years scroller to follow the cards (instant, no smooth) for a real-time feel
+            const yearContainer = yearContainerRef.current;
+            const yearEl = yearRefs.current[nearest];
+            if (yearContainer && yearEl) {
+                isProgrammaticRef.current = true;
+                const target = yearEl.offsetLeft - yearContainer.clientWidth / 2 + yearEl.offsetWidth / 2;
+                yearContainer.scrollLeft = target;
+                // release guard next frame
+                requestAnimationFrame(() => {
+                    isProgrammaticRef.current = false;
                 });
+            }
+        });
+    };
 
-                syncScrollToIndex(nearest);
-            }, 20); // ⬅️ adjust for more/less delay
+    const handleYearScroll = () => {
+        if (isProgrammaticRef.current) return;
+
+        if (rafRef.current) cancelAnimationFrame(rafRef.current);
+
+        rafRef.current = requestAnimationFrame(() => {
+            const container = yearContainerRef.current;
+            const center = container.scrollLeft + container.clientWidth / 2;
+
+            let nearest = 0;
+            let minDist = Infinity;
+
+            yearRefs.current.forEach((yearEl, index) => {
+                if (!yearEl) return;
+                const yearCenter = yearEl.offsetLeft + yearEl.offsetWidth / 2;
+                const dist = Math.abs(center - yearCenter);
+                if (dist < minDist) {
+                    minDist = dist;
+                    nearest = index;
+                }
+            });
+
+            if (nearest !== activeIndex) {
+                setActiveIndex(nearest);
+            }
+
+            // live-sync the cards scroller to follow the years (instant, no smooth) for real-time feel
+            const cardContainer = cardContainerRef.current;
+            const cardEl = cardRefs.current[nearest];
+            if (cardContainer && cardEl) {
+                isProgrammaticRef.current = true;
+                const target = cardEl.offsetLeft - cardContainer.clientWidth / 2 + cardEl.offsetWidth / 2;
+                cardContainer.scrollLeft = target;
+                requestAnimationFrame(() => {
+                    isProgrammaticRef.current = false;
+                });
+            }
         });
     };
 
@@ -125,6 +192,7 @@ export default function TimelineScroll() {
                 {/* Scrollable Years */}
                 <div
                     ref={yearContainerRef}
+                    onScroll={handleYearScroll}
                     className="relative flex overflow-x-auto gap-12 md:gap-20 scrollbar-hide snap-x snap-mandatory"
                     style={{ scrollBehavior: "smooth" }}
                 >
