@@ -66,6 +66,7 @@ export default function AboutUsPage() {
                 header={ourHistorySection?.header}
                 description={ourHistorySection?.description}
             />
+            <Hr />
             <TeamCardSection
                 header={teamSection?.header}
                 description={teamSection?.description}

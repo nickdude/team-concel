@@ -1,6 +1,6 @@
 export default function OurImpactSection({ header, description }) {
     return (
-        <div className=" bg-brand-gray flex flex-col justify-center items-center pt-10">
+        <section className=" bg-brand-gray flex flex-col justify-center items-center pt-10 py-12 sm:py-16">
             <div className='w-full flex flex-col justify-center mb-16 px-4 sm:px-8 md:px-36 2xl:px-44'>
                 <h1 className='text-left font-onest text-[2.13rem] sm:text-3xl md:text-[2.4rem] font-semibold text-navy leading-[130%] tracking-[-0.67px]'>{header?.simple} <span className='text-brand-navy font-ptserif font-normal italic'>{header?.italic}</span></h1>
                 <p className="font-onest text-brand-navy font-normal text-base leading-[27px] mt-3 sm:w-[80%] md:w-[55%]">
@@ -10,9 +10,9 @@ export default function OurImpactSection({ header, description }) {
                     <img src="/assets/icons/growth.svg" alt="Impact Metrics" className="w-auto h-8" />
                     <p>Empowering early-stage startups and investors across 5 countries.</p>
                 </div>
-                <div className="flex sm:flex-col flex-row gap-4 mt-10">
-                    <div className="flex sm:flex-row flex-col gap-4 w-full sm:w-auto">
-                        <div className="relative w-1/2 h-[573px] rounded-3xl overflow-hidden flex">
+                <div className="flex flex-col gap-4 mt-10">
+                    <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                        <div className="relative w-full md:w-1/2 h-[573px] rounded-3xl overflow-hidden flex">
                             <img
                                 src="/assets/impact/impact1.png"
                                 alt="Impact 1"
@@ -34,7 +34,7 @@ export default function OurImpactSection({ header, description }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="relative w-1/2 h-[573px] rounded-3xl overflow-hidden flex bg-[#1E3B73]">
+                        <div className="relative w-full md:w-1/2 h-[573px] rounded-3xl overflow-hidden flex bg-[#1E3B73]">
 
                             {/* Content Wrapper */}
                             <div className="relative text-white p-8 w-full flex flex-col justify-between">
@@ -67,10 +67,10 @@ export default function OurImpactSection({ header, description }) {
                         </div>
                     </div>
 
-                    <div className="w-full rounded-3xl bg-white p-4 flex gap-10 items-center">
+                    <div className="w-full rounded-3xl bg-white p-4 flex flex-col md:flex-row gap-10 items-center">
 
                         {/* IMAGE */}
-                        <div className="w-1/2 h-[450px] rounded-2xl overflow-hidden">
+                        <div className="w-full md:w-1/2  h-[450px] rounded-2xl overflow-hidden">
                             <img
                                 src="/assets/impact-image.png"
                                 alt="Legal"
@@ -79,7 +79,7 @@ export default function OurImpactSection({ header, description }) {
                         </div>
 
                         {/* TEXT CONTENT */}
-                        <div className="w-1/2 flex flex-col justify-between h-full">
+                        <div className="w-full md:w-1/2  flex flex-col justify-between h-full">
 
                             {/* Top label */}
                             <p className="text-brand-navy text-base font-medium mb-6 tracking-wide">
@@ -100,6 +100,6 @@ export default function OurImpactSection({ header, description }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
