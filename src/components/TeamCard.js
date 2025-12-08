@@ -1,24 +1,20 @@
-export default function TeamCard({ image, label, description }) {
+"use client";
+export default function TeamCard({ image, label, description, notes, linkedin }) {
     return (
-        <div className="relative w-full bg-white rounded-2xl overflow-hidden group cursor-pointer">
+        <div className="relative w-80 sm:w-full bg-white rounded-2xl overflow-hidden group cursor-pointer">
 
             {/* IMAGE FIXED HEIGHT */}
-            <div className="relative w-full h-[300px] overflow-hidden">
+            <div className="relative w-full h-96 overflow-hidden">
                 <img
                     src={image}
                     alt="Team Member"
-                    className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
+                    className="w-full h-full transition-all duration-300 group-hover:scale-105"
                 />
 
                 {/* Hover text overlay only on image */}
                 <div className="absolute inset-0 bg-black/50 backdrop-blur-md text-white p-6 opacity-0 transition-all duration-300 group-hover:opacity-100 flex items-center z-10">
                     <p className="text-sm font-inter leading-6">
-                        11+ years in M&A, PE, and VC law. Ex-Alpha Wave Global, AZB, and Trilegal.
-                        Closed 80+ deals worth $20Bn+ across 7 countries. Now helping founders
-                        raise faster, scale smarter, and stay compliant – minus the legal fluff.
-
-                        <br /><br />
-                        <span className="font-bold">Fun fact:</span> If you're fundraising, he’s probably helped someone just like you.
+                        {notes}
                     </p>
                 </div>
             </div>
@@ -34,6 +30,11 @@ export default function TeamCard({ image, label, description }) {
                     <img
                         src="/assets/icons/linkedin.svg"
                         alt="LinkedIn"
+                        onClick={() => {
+                            if (linkedin) {
+                                window.open(linkedin, '_blank');
+                            }
+                        }}
                         className="w-6 h-6 hover:opacity-80 transition cursor-pointer z-30"
                     />
                 </div>

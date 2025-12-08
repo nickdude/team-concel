@@ -1183,27 +1183,37 @@ const siteData = {
                 {
                     "image": "/assets/teams/team1.png",
                     "label": "John Mathew",
-                    "description": "Founder & Lead Counsel"
+                    "description": "Founder & Lead Counsel",
+                    "notes": "11+ years in M&A, PE, and VC law. Ex-Alpha Wave Global, AZB, and Trilegal. Closed 80+ deals worth $20Bn+ across 7 countries. Now helping founders raise faster, scale smarter, and stay compliant – minus the legal fluff.Fun fact: If you're fundraising, he’s probably helped someone just like you.",
+                    "linkedin": "https://www.linkedin.com/in/john-mathewtc/"
                 },
                 {
                     "image": "/assets/teams/team2.png",
                     "label": "Aruna Bopche",
-                    "description": "Associate, U.S. Practice"
+                    "description": "Associate, U.S. Practice",
+                    "notes": "Heads the U.S. practice and works across LD&T, CaaS, FGC, and ECP projects. She’s all about bringing tech into law – designing smarter systems, smoother workflows, and solutions that actually work.",
+                    "linkedin": "https://www.linkedin.com/in/aruna-bopche-021495167/"
                 },
                 {
                     "image": "/assets/teams/team3.png",
                     "label": "Gayatri Singh",
-                    "description": "Associate, India Practice"
+                    "description": "Associate, India Practice",
+                    "notes": "Handles all things startups – from contracts to compliance under India vertical. When she’s not lawyering, she’s crafting content and BD ideas that make legal sound (almost) fun.",
+                    "linkedin": "https://www.linkedin.com/in/iamgayatrisingh/"
                 },
                 {
                     "image": "/assets/teams/team4.png",
                     "label": "Annshika Bakshi",
-                    "description": "Policy & Research"
+                    "description": "Policy & Research",
+                    "notes": "Where law meets storytelling. From policies to playbooks – she turns complex legal into clear, founder-friendly content that actually sticks.",
+                    "linkedin": "https://www.linkedin.com/in/annshika-bakshi-8956a7260/"
                 },
                 {
                     "image": "/assets/teams/team5.png",
                     "label": "Ananya Saxena",
-                    "description": "Trainee Associate"
+                    "description": "Trainee Associate",
+                    "notes": "From drafting to due diligence – she’s the go-to helping hand across India and US matters. Can review a contract faster than you can say “NDA” – and somehow enjoys it too.",
+                    "linkedin": "https://www.linkedin.com/in/ananya-saxena-a67a67221/"
                 },
             ]
         },
@@ -1219,7 +1229,7 @@ const siteData = {
                 "We don’t just advise; we fix, simplify, and move things forward."
             ],
             "uspImage": {
-                "src": "/assets/about-us-usp.svg",
+                "src": "/assets/founder-image.png",
                 "alt": "USP Image"
             },
             "buttonLabel": "Book My Strategy Call"

@@ -4,7 +4,7 @@ import Hr from "./Hr";
 export default function UspSection({ header, description, points, uspImage, breakLine = true }) {
 
     return (
-        <section className="py-0 sm:py-16 md:py-20 flex justify-center">
+        <section className="py-10 sm:py-16 md:py-20 flex justify-center">
             <div className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-8 md:px-36 2xl:px-44 w-full gap-10 md:gap-20">
 
                 {/* Left Side */}

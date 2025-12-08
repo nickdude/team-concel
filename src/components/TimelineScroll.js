@@ -7,6 +7,7 @@ import Image from "next/image";
 const timelineItems = [
     {
         year: 2021,
+        image: "/assets/history/history.png",
         subtitle: "The Launch",
         title: "The Beginning",
         description:
@@ -14,6 +15,7 @@ const timelineItems = [
     },
     {
         year: 2022,
+        image: "/assets/history/history1.png",
         subtitle: "The Rise",
         title: "The Momentum",
         description:
@@ -21,6 +23,7 @@ const timelineItems = [
     },
     {
         year: 2023,
+        image: "/assets/history/history2.png",
         subtitle: "The Scale",
         title: "The Expansion",
         description:
@@ -28,6 +31,7 @@ const timelineItems = [
     },
     {
         year: 2024,
+        image: "/assets/history/history3.png",
         subtitle: "The Growth",
         title: "Ecosystem Era",
         description:
@@ -35,6 +39,7 @@ const timelineItems = [
     },
     {
         year: 2025,
+        image: "/assets/history/history.png",
         subtitle: "The Now",
         title: "The Future",
         description:
@@ -280,7 +285,7 @@ export default function TimelineScroll() {
 
                                     <div className="relative w-full h-[200px] md:h-[250px]">
                                         <Image
-                                            src="/assets/history/history.png"
+                                            src={item.image || "/assets/history/history.png"}
                                             alt={item.title}
                                             fill
                                             className="object-cover"
