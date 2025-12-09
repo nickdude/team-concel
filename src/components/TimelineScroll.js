@@ -7,43 +7,38 @@ import Image from "next/image";
 const timelineItems = [
     {
         year: 2021,
-        image: "/assets/history/history.png",
-        subtitle: "The Launch",
-        title: "The Beginning",
+        image: "/assets/history/history1.png",
+        title: "The Vision",
+        description:
+            "John Mathew saw founders drowning in legal complexity and set out to fix it. He built startup-friendly legal frameworks that fuel growth instead of slowing it down.",
+    },
+    {
+        year: 2022,
+        image: "/assets/history/history2.png",
+        title: "The Build",
+        description:
+            "Team Counsel was born — a consulting platform for startups and venture funds built on clarity, speed, and collaboration.",
+    },
+    {
+        year: 2023,
+        image: "/assets/history/history3.png",
+        title: "The Launch",
         description:
             "Officially launched. Quickly became known for cutting through complexity and making deals happen faster.",
     },
     {
-        year: 2022,
-        image: "/assets/history/history1.png",
-        subtitle: "The Rise",
-        title: "The Momentum",
-        description:
-            "Adopted by more customers and scaled to multiple teams across organizations.",
-    },
-    {
-        year: 2023,
-        image: "/assets/history/history2.png",
-        subtitle: "The Scale",
-        title: "The Expansion",
-        description:
-            "Expanded across sectors and regions while maturing product experience.",
-    },
-    {
         year: 2024,
-        image: "/assets/history/history3.png",
-        subtitle: "The Growth",
-        title: "Ecosystem Era",
+        image: "/assets/history/history4.png",
+        title: "The Growth",
         description:
-            "Became a trusted partner bridging technology, business and law.",
+            "Expanded across sectors and stages. Became a trusted ecosystem partner bridging law and entrepreneurship.",
     },
     {
         year: 2025,
-        image: "/assets/history/history.png",
-        subtitle: "The Now",
-        title: "The Future",
+        image: "/assets/history/history5.png",
+        title: "The Now",
         description:
-            "Supporting startups & investors, enabling over $20Bn in business deals.",
+            "Supporting 25+ startups, 80+ investors, and $20Bn+ in deals. Still driven by the same mission — to make law an enabler, not a bottleneck.",
     },
 ];
 
@@ -293,9 +288,9 @@ export default function TimelineScroll() {
                                     </div>
 
                                     <div className="p-6 md:p-8 text-left">
-                                        <p className="text-[11px] uppercase tracking-[0.20em] text-slate-500 font-semibold mb-2">
+                                        {/* <p className="text-[11px] uppercase tracking-[0.20em] text-slate-500 font-semibold mb-2">
                                             {item.subtitle}
-                                        </p>
+                                        </p> */}
                                         <h3 className="text-xl md:text-2xl font-bold text-[#1B2B4B] mb-3">
                                             {item.title}
                                         </h3>
