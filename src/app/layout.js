@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Onest, Bricolage_Grotesque, Space_Grotesk, PT_Serif } from "next/font/google";
 import ClientLayout from "@/components/ClientLayout";
+import Script from 'next/script';
 
 const onest = Onest({
   subsets: ["latin"],
@@ -64,6 +65,13 @@ export default function RootLayout({ children }) {
       className={`${onest.variable} ${bricolage.variable} ${spaceGrotesk.variable} ${ptSerif.variable}`}
     >
       <body className="font-onest bg-brand-white text-brand-navy">
+        <Script
+          id="reb2b-loader"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `!function(key) {if (window.reb2b) return;window.reb2b = {loaded: true};var s = document.createElement("script");s.async = true;s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]);}("Z6PVLHP4P06R");`
+          }}
+        />
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

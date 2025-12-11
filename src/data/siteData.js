@@ -1130,7 +1130,7 @@ const siteData = {
                 "Bridge the gap between legal and business so compliance never kills growth."
             ],
             "uspImage": {
-                "src": "/assets/about-us-usp.svg",
+                "src": "/assets/about-us-usp.png",
                 "alt": "USP Image"
             },
             "buttonLabel": "Book My Strategy Call"
