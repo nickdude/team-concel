@@ -4,7 +4,7 @@ export default function TeamCard({ image, label, description, notes, linkedin })
         <div className="relative w-80 sm:w-full bg-white rounded-2xl overflow-hidden group cursor-pointer">
 
             {/* IMAGE FIXED HEIGHT */}
-            <div className="relative w-full h-96 overflow-hidden">
+            <div className="relative w-full overflow-hidden">
                 <img
                     src={image}
                     alt="Team Member"
